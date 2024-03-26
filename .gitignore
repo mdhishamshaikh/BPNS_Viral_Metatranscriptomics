@@ -9,6 +9,14 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.fa
+*.fna
+*.fastq
+*.fastq.gz
+*.gz
+data/
+working/
+
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -396,3 +404,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
