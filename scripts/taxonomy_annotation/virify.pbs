@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+#PBS -N virify
+#PBS -l nodes=1:ppn=4 #1 of node requested; 20 processors in total
+#PBS -l walltime=24:00:00 # 24 hours walltime
+#PBS -l mem=50gb #50 Gb memory in total
+#PBS -m abe
+#PBS -M MohammedHisham.Shaikh@ugent.be
+
+#Making sure I am on the rigth cluster
+module swap cluster/doduo
+
+cd /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/scripts/taxonomy_annotation/
+
+. virify.sh

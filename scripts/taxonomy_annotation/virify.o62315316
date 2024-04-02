@@ -1,0 +1,236 @@
+Checking EBI-Metagenomics/emg-viral-pipeline ...
+ done - revision: f367002f0e [v0.4.0]
+N E X T F L O W  ~  version 23.10.0
+Launching `https://github.com/EBI-Metagenomics/emg-viral-pipeline` [naughty_kay] DSL2 - revision: f367002f0e [v0.4.0]
+ 
+Profile: slurm,singularity
+ 
+Current User: vsc44392
+Nextflow-version: 23.10.0
+Starting time: 15-10-2023 15:14 UTC
+Workdir location:
+  /kyukon/data/gent/vo/001/gvo00125/vsc44392/work
+Databases location:
+  nextflow-autodownload-databases
+ 
+Dev ViPhOG database: v3
+Dev Meta database: v2
+ 
+Only run annotation: false
+ 
+[-        ] process > download_virsorter_db:virso... -
+[-        ] process > download_viphog_db:viphogGetDB -
+[-        ] process > download_checkv_db:checkvGetDB -
+[-        ] process > preprocess:rename              -
+[-        ] process > preprocess:length_filtering    -
+[-        ] process > detect:virsorter               -
+[-        ] process > detect:virfinder               -
+[-        ] process > detect:pprmeta                 -
+[-        ] process > detect:parse                   -
+
+[-        ] process > download_virsorter_db:virso... -
+[-        ] process > download_viphog_db:viphogGetDB -
+[-        ] process > download_checkv_db:checkvGetDB -
+[-        ] process > preprocess:rename              -
+[-        ] process > preprocess:length_filtering    -
+[-        ] process > detect:virsorter               -
+[-        ] process > detect:virfinder               -
+[-        ] process > detect:pprmeta                 -
+[-        ] process > detect:parse                   -
+[-        ] process > postprocess:restore            -
+[-        ] process > annotate:prodigal              -
+[-        ] process > annotate:hmmscan_viphogs       -
+[-        ] process > annotate:hmm_postprocessing    -
+[-        ] process > annotate:ratio_evalue          -
+[-        ] process > annotate:annotation            -
+[-        ] process > annotate:plot_contig_map       -
+[-        ] process > annotate:assign                -
+[-        ] process > annotate:checkV                -
+[-        ] process > plot:generate_krona_table      -
+[-        ] process > plot:krona                     -
+[-        ] process > plot:generate_sankey_table     -
+[-        ] process > plot:sankey                    -
+
+executor >  slurm (1)
+[-        ] process > download_virsorter_db:virso... [  0%] 0 of 1
+[cd/c85a18] process > download_viphog_db:viphogGetDB [  0%] 0 of 1
+[-        ] process > download_checkv_db:checkvGetDB [  0%] 0 of 1
+[-        ] process > preprocess:rename              [  0%] 0 of 1
+[-        ] process > preprocess:length_filtering    -
+[-        ] process > detect:virsorter               -
+[-        ] process > detect:virfinder               -
+[-        ] process > detect:pprmeta                 -
+[-        ] process > detect:parse                   -
+[-        ] process > postprocess:restore            -
+[-        ] process > annotate:prodigal              -
+[-        ] process > annotate:hmmscan_viphogs       -
+[-        ] process > annotate:hmm_postprocessing    -
+[-        ] process > annotate:ratio_evalue          -
+[-        ] process > annotate:annotation            -
+[-        ] process > annotate:plot_contig_map       -
+[-        ] process > annotate:assign                -
+[-        ] process > annotate:checkV                -
+[-        ] process > plot:generate_krona_table      -
+[-        ] process > plot:krona                     -
+[-        ] process > plot:generate_sankey_table     -
+[-        ] process > plot:sankey                    -
+
+executor >  slurm (4)
+[a6/a36ba3] process > download_virsorter_db:virso... [  0%] 0 of 1
+[cd/c85a18] process > download_viphog_db:viphogGetDB [  0%] 0 of 1
+[44/7f17b7] process > download_checkv_db:checkvGetDB [  0%] 0 of 1
+[c8/fb0292] process > preprocess:rename (1)          [  0%] 0 of 1
+[-        ] process > preprocess:length_filtering    -
+[-        ] process > detect:virsorter               -
+[-        ] process > detect:virfinder               -
+[-        ] process > detect:pprmeta                 -
+[-        ] process > detect:parse                   -
+[-        ] process > postprocess:restore            -
+[-        ] process > annotate:prodigal              -
+[-        ] process > annotate:hmmscan_viphogs       -
+[-        ] process > annotate:hmm_postprocessing    -
+[-        ] process > annotate:ratio_evalue          -
+[-        ] process > annotate:annotation            -
+[-        ] process > annotate:plot_contig_map       -
+[-        ] process > annotate:assign                -
+[-        ] process > annotate:checkV                -
+[-        ] process > plot:generate_krona_table      -
+[-        ] process > plot:krona                     -
+[-        ] process > plot:generate_sankey_table     -
+[-        ] process > plot:sankey                    -
+
+executor >  slurm (4)
+[a6/a36ba3] process > download_virsorter_db:virso... [  0%] 0 of 1
+[cd/c85a18] process > download_viphog_db:viphogGetDB [  0%] 0 of 1
+[44/7f17b7] process > download_checkv_db:checkvGetDB [  0%] 0 of 1
+[c8/fb0292] process > preprocess:rename (1)          [  0%] 0 of 1
+[-        ] process > preprocess:length_filtering    -
+[-        ] process > detect:virsorter               -
+[-        ] process > detect:virfinder               -
+[-        ] process > detect:pprmeta                 -
+[-        ] process > detect:parse                   -
+[-        ] process > postprocess:restore            -
+[-        ] process > annotate:prodigal              -
+[-        ] process > annotate:hmmscan_viphogs       -
+[-        ] process > annotate:hmm_postprocessing    -
+[-        ] process > annotate:ratio_evalue          -
+[-        ] process > annotate:annotation            -
+[-        ] process > annotate:plot_contig_map       -
+[-        ] process > annotate:assign                -
+[-        ] process > annotate:checkV                -
+[-        ] process > plot:generate_krona_table      -
+[-        ] process > plot:krona                     -
+[-        ] process > plot:generate_sankey_table     -
+[-        ] process > plot:sankey                    -
+
+executor >  slurm (4)
+[a6/a36ba3] process > download_virsorter_db:virso... [  0%] 0 of 1
+[cd/c85a18] process > download_viphog_db:viphogGetDB [  0%] 0 of 1
+[44/7f17b7] process > download_checkv_db:checkvGetDB [  0%] 0 of 1
+[c8/fb0292] process > preprocess:rename (1)          [  0%] 0 of 1
+[-        ] process > preprocess:length_filtering    -
+[-        ] process > detect:virsorter               -
+[-        ] process > detect:virfinder               -
+[-        ] process > detect:pprmeta                 -
+[-        ] process > detect:parse                   -
+[-        ] process > postprocess:restore            -
+[-        ] process > annotate:prodigal              -
+[-        ] process > annotate:hmmscan_viphogs       -
+[-        ] process > annotate:hmm_postprocessing    -
+[-        ] process > annotate:ratio_evalue          -
+[-        ] process > annotate:annotation            -
+[-        ] process > annotate:plot_contig_map       -
+[-        ] process > annotate:assign                -
+[-        ] process > annotate:checkV                -
+[-        ] process > plot:generate_krona_table      -
+[-        ] process > plot:krona                     -
+[-        ] process > plot:generate_sankey_table     -
+[-        ] process > plot:sankey                    -
+ERROR ~ Error executing process > 'preprocess:rename (1)'
+
+Caused by:
+  Process `preprocess:rename (1)` terminated with an error exit status (255)
+
+Command executed:
+
+  if [[ assembly.fasta =~ \.gz$ ]]; then
+    zcat assembly.fasta > tmp.fasta
+  else
+    cp assembly.fasta tmp.fasta
+  fi
+  rename_fasta.py -i tmp.fasta -m assembly_map.tsv -o assembly_renamed.fasta rename
+
+Command exit status:
+  255
+
+Command output:
+  (empty)
+
+Command error:
+  INFO:    Environment variable SINGULARITYENV_TMPDIR is set, but APPTAINERENV_TMPDIR is preferred
+  INFO:    Environment variable SINGULARITYENV_NXF_TASK_WORKDIR is set, but APPTAINERENV_NXF_TASK_WORKDIR is preferred
+  FATAL:   apptainer image is not in an allowed configured path
+
+Work dir:
+  /kyukon/data/gent/vo/001/gvo00125/vsc44392/work/c8/fb02928e172a7a2ddceaa1a49892bf
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+ -- Check '.nextflow.log' file for details
+WARN: Killing running tasks (3)
+
+executor >  slurm (4)
+[-        ] process > download_virsorter_db:virso... -
+[-        ] process > download_viphog_db:viphogGetDB -
+[-        ] process > download_checkv_db:checkvGetDB -
+[c8/fb0292] process > preprocess:rename (1)          [100%] 1 of 1, failed: 1 ✘
+[-        ] process > preprocess:length_filtering    -
+[-        ] process > detect:virsorter               -
+[-        ] process > detect:virfinder               -
+[-        ] process > detect:pprmeta                 -
+[-        ] process > detect:parse                   -
+[-        ] process > postprocess:restore            -
+[-        ] process > annotate:prodigal              -
+[-        ] process > annotate:hmmscan_viphogs       -
+[-        ] process > annotate:hmm_postprocessing    -
+[-        ] process > annotate:ratio_evalue          -
+[-        ] process > annotate:annotation            -
+[-        ] process > annotate:plot_contig_map       -
+[-        ] process > annotate:assign                -
+[-        ] process > annotate:checkV                -
+[-        ] process > plot:generate_krona_table      -
+[-        ] process > plot:krona                     -
+[-        ] process > plot:generate_sankey_table     -
+[-        ] process > plot:sankey                    -
+ERROR ~ Error executing process > 'preprocess:rename (1)'
+
+Caused by:
+  Process `preprocess:rename (1)` terminated with an error exit status (255)
+
+Command executed:
+
+  if [[ assembly.fasta =~ \.gz$ ]]; then
+    zcat assembly.fasta > tmp.fasta
+  else
+    cp assembly.fasta tmp.fasta
+  fi
+  rename_fasta.py -i tmp.fasta -m assembly_map.tsv -o assembly_renamed.fasta rename
+
+Command exit status:
+  255
+
+Command output:
+  (empty)
+
+Command error:
+  INFO:    Environment variable SINGULARITYENV_TMPDIR is set, but APPTAINERENV_TMPDIR is preferred
+  INFO:    Environment variable SINGULARITYENV_NXF_TASK_WORKDIR is set, but APPTAINERENV_NXF_TASK_WORKDIR is preferred
+  FATAL:   apptainer image is not in an allowed configured path
+
+Work dir:
+  /kyukon/data/gent/vo/001/gvo00125/vsc44392/work/c8/fb02928e172a7a2ddceaa1a49892bf
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+
+ -- Check '.nextflow.log' file for details
+

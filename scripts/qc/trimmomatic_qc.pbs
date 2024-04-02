@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+#PBS -N trimmomatic_qc
+#PBS -l nodes=1:ppn=10 #1 of node requested; 10 processors in total
+#PBS -l walltime=10:00:00 # 10 hours walltime
+#PBS -l mem=10gb #10 Gb memory in total
+#PBS -m abe
+#PBS -M MohammedHisham.Shaikh@ugent.be
+
+#Making sure I am on the rigth cluster
+module swap cluster/donphan
+
+cd /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/scripts/qc
+
+. trimmomatic_qc.sh

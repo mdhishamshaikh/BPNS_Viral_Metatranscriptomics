@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+#PBS -N fastqc_multiqc
+#PBS -l nodes=1:ppn=10 #1 of node requested; 10 processors in total
+#PBS -l walltime=8:00:00 # 8 hours walltime
+#PBS -l mem=5gb #5 Gb memory in total
+#PBS -m abe
+#PBS -M MohammedHisham.Shaikh@ugent.be
+
+#Makin sure I am on the rigth cluster
+# module swap cluster/donphan
+
+cd /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/scripts/qc
+
+. fastqc_multiqc.sh

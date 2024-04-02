@@ -1,0 +1,12 @@
+/data/gent/vo/001/gvo00125/vsc44392/miniconda3/envs/qc/lib/python2.7/site-packages/multiqc-1.0.dev0-py2.7.egg/multiqc/utils/config.py:44: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  configs = yaml.load(f)
+/data/gent/vo/001/gvo00125/vsc44392/miniconda3/envs/qc/lib/python2.7/site-packages/multiqc-1.0.dev0-py2.7.egg/multiqc/utils/config.py:50: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  sp = yaml.load(f)
+[INFO   ]         multiqc : This is MultiQC v1.0.dev0
+[INFO   ]         multiqc : Template    : default
+[INFO   ]         multiqc : Prepending directory to sample names
+[INFO   ]         multiqc : Searching '/data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/qc//fastqc'
+[INFO   ]          fastqc : Found 124 reports
+[INFO   ]         multiqc : Report      : ../../../../../../../../../../data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/qc/multiqc/multiqc_report.html
+[INFO   ]         multiqc : Data        : ../../../../../../../../../../data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/qc/multiqc/multiqc_data
+[INFO   ]         multiqc : MultiQC complete
