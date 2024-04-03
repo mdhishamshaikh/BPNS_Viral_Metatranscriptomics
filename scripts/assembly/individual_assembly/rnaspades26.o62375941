@@ -1392,3 +1392,174 @@ Max read length detected as 151
   0:09:24.537     5G / 34G   INFO    General                 (contig_output_stage.cpp   :  40)   Writing GFA to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56//K127/assembly_graph_with_scaffolds.gfa
   0:09:31.860     5G / 34G   INFO    General                 (contig_output.hpp         :  22)   Outputting contigs to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56//K127/before_rr.fasta
   0:09:45.673     5G / 34G   INFO    General                 (contig_output_stage.cpp   :  51)   Outputting FastG graph to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56//K127/assembly_graph.fastg
+  0:10:10.788     5G / 34G   INFO    General                 (contig_output.hpp         :  22)   Outputting contigs to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56//K127/simplified_contigs.fasta
+  0:10:24.528     5G / 34G   INFO    General                 (contig_output.hpp         :  22)   Outputting contigs to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56//K127/intermediate_contigs.fasta
+  0:10:38.242     5G / 34G   INFO   StageManager             (stage.cpp                 : 132)   STAGE == Paired Information Counting
+  0:10:51.611     6G / 34G   INFO    General                 (graph_pack.hpp            : 109)   Normalizing k-mer map. Total 2751078 kmers to process
+  0:10:53.736     6G / 34G   INFO    General                 (graph_pack.hpp            : 111)   Normalizing done
+  0:10:54.993     6G / 34G   INFO    General                 (pair_info_count.cpp       : 320)   Min edge length for estimation: 115
+  0:10:54.993     6G / 34G   INFO    General                 (pair_info_count.cpp       : 331)   Estimating insert size for library #0
+  0:10:54.993     6G / 34G   INFO    General                 (pair_info_count.cpp       : 190)   Estimating insert size (takes a while)
+  0:10:55.719     7G / 34G   INFO    General                 (pair_info_count.cpp       :  39)   Selecting usual mapper
+  0:11:00.077     7G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 200000 reads
+  0:11:00.098     7G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 400000 reads
+  0:11:00.118     7G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 600000 reads
+  0:11:00.138     7G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 800000 reads
+  0:11:00.159     7G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 1000000 reads
+  0:11:00.179     7G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 1200000 reads
+  0:11:00.280     7G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 2200000 reads
+  0:11:00.483     7G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 4200000 reads
+  0:11:04.982     7G / 34G   INFO    General                 (sequence_mapper_notifier.h:  98)   Total 14613235 reads processed
+  0:11:05.237     7G / 34G   INFO    General                 (pair_info_count.cpp       : 209)   Edge pairs: 67108864 (rough upper limit)
+  0:11:05.237     7G / 34G   INFO    General                 (pair_info_count.cpp       : 213)   7194956 paired reads (49.2359% of all) aligned to long edges
+  0:11:05.239     6G / 34G   INFO    General                 (pair_info_count.cpp       : 354)     Insert size = 192.674, deviation = 53.7158, left quantile = 136, right quantile = 267, read length = 151
+  0:11:05.239     6G / 34G   INFO    General                 (pair_info_count.cpp       : 383)   Mapping library #0
+  0:11:05.239     6G / 34G   INFO    General                 (pair_info_count.cpp       : 385)   Mapping paired reads (takes a while)
+  0:11:05.239     6G / 34G   INFO    General                 (pair_info_count.cpp       : 289)   Left insert size quantile 136, right insert size quantile 267, filtering threshold 0, rounding threshold 0
+  0:11:05.244     6G / 34G   INFO    General                 (pair_info_count.cpp       :  39)   Selecting usual mapper
+  0:11:08.623     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 200000 reads
+  0:11:08.626     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 400000 reads
+  0:11:08.627     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 600000 reads
+  0:11:08.632     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 800000 reads
+  0:11:08.641     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 1000000 reads
+  0:11:08.642     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 1200000 reads
+  0:11:08.665     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 2200000 reads
+  0:11:08.712     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 4200000 reads
+  0:11:12.128     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  98)   Total 14613235 reads processed
+  0:11:12.828     6G / 34G   INFO    General                 (pair_info_count.cpp       : 392)   Mapping single reads of library #0
+  0:11:12.828     6G / 34G   INFO    General                 (pair_info_count.cpp       : 255)   Will calculate lib coverage as well
+  0:11:12.828     6G / 34G   INFO    General                 (pair_info_count.cpp       :  39)   Selecting usual mapper
+  0:11:17.550     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 200000 reads
+  0:11:17.561     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 400000 reads
+  0:11:17.574     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 600000 reads
+  0:11:17.589     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 800000 reads
+  0:11:17.628     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 1000000 reads
+  0:11:17.650     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 1200000 reads
+  0:11:17.844     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 2200000 reads
+  0:11:18.087     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 4200000 reads
+  0:11:20.273     6G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 8400000 reads
+  0:11:25.516     7G / 34G   INFO    General                 (sequence_mapper_notifier.h:  80)   Processed 16800000 reads
+  0:11:31.159     7G / 34G   INFO    General                 (sequence_mapper_notifier.h:  98)   Total 29356279 reads processed
+  0:11:31.651     7G / 34G   INFO    General                 (pair_info_count.cpp       : 394)   Total paths obtained from single reads: 0
+  0:11:31.651     7G / 34G   INFO   StageManager             (stage.cpp                 : 132)   STAGE == Distance Estimation
+  0:11:31.651     7G / 34G   INFO    General                 (distance_estimation.cpp   : 173)   Processing library #0
+  0:11:31.651     7G / 34G   INFO    General                 (distance_estimation.cpp   : 149)   Weight Filter Done
+  0:11:31.651     7G / 34G   INFO   DistanceEstimator        (distance_estimation.hpp   : 116)   Using SIMPLE distance estimator
+  0:11:33.546     7G / 34G   INFO    General                 (distance_estimation.cpp   :  34)   Filtering info
+  0:11:33.546     7G / 34G   INFO    General                 (pair_info_filters.hpp     : 242)   Start filtering; index size: 4776094
+  0:11:38.917     7G / 34G   INFO    General                 (pair_info_filters.hpp     : 263)   Done filtering
+  0:11:38.917     7G / 34G   INFO    General                 (distance_estimation.cpp   : 156)   Refining clustered pair information
+  0:11:39.171     7G / 34G   INFO    General                 (distance_estimation.cpp   : 158)   The refining of clustered pair information has been finished
+  0:11:39.171     7G / 34G   INFO    General                 (distance_estimation.cpp   : 160)   Improving paired information
+  0:11:44.743     7G / 34G   INFO   PairInfoImprover         (pair_info_improver.hpp    : 103)   Paired info stats: missing = 23; contradictional = 0
+  0:11:50.326     7G / 34G   INFO   PairInfoImprover         (pair_info_improver.hpp    : 103)   Paired info stats: missing = 0; contradictional = 0
+  0:11:50.326     7G / 34G   INFO   StageManager             (stage.cpp                 : 132)   STAGE == Repeat Resolving
+  0:11:50.327     7G / 34G   INFO    General                 (repeat_resolving.cpp      :  69)   Using Path-Extend repeat resolving
+  0:11:50.327     7G / 34G   INFO    General                 (launcher.cpp              : 477)   ExSPAnder repeat resolving tool started
+  0:12:02.123    16G / 34G   INFO    General                 (launcher.cpp              : 392)   Creating main extenders, unique edge length = 2000
+  0:12:04.838    16G / 34G   INFO    General                 (extenders_logic.cpp       : 472)   Using 1 paired-end library
+  0:12:04.838    16G / 34G   INFO    General                 (extenders_logic.cpp       : 473)   Using 1 paired-end scaffolding library
+  0:12:04.838    16G / 34G   INFO    General                 (extenders_logic.cpp       : 474)   Using 0 single read libraries
+  0:12:04.838    16G / 34G   INFO    General                 (launcher.cpp              : 420)   Total number of extenders is 5
+  0:12:04.838    16G / 34G   INFO    General                 (path_extender.hpp         : 885)   Processed 0 paths from 2385542 (0%)
+  0:12:04.861    16G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 128 paths from 2385542 (0%)
+  0:12:04.883    16G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 256 paths from 2385542 (0%)
+  0:12:04.924    16G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 512 paths from 2385542 (0%)
+  0:12:05.007    16G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 1024 paths from 2385542 (0%)
+  0:12:05.173    16G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 2048 paths from 2385542 (0%)
+  0:12:05.507    16G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 4096 paths from 2385542 (0%)
+  0:12:06.148    16G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 8192 paths from 2385542 (0%)
+  0:12:07.392    16G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 16384 paths from 2385542 (0%)
+  0:12:09.804    17G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 32768 paths from 2385542 (1%)
+  0:12:14.209    17G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 65536 paths from 2385542 (2%)
+  0:12:21.814    17G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 131072 paths from 2385542 (5%)
+  0:12:32.069    18G / 34G   INFO    General                 (path_extender.hpp         : 885)   Processed 238555 paths from 2385542 (10%)
+  0:12:34.055    18G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 262144 paths from 2385542 (10%)
+  0:12:51.823    20G / 34G   INFO    General                 (path_extender.hpp         : 885)   Processed 477110 paths from 2385542 (20%)
+  0:12:55.630    20G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 524288 paths from 2385542 (21%)
+  0:13:10.611    22G / 34G   INFO    General                 (path_extender.hpp         : 885)   Processed 715665 paths from 2385542 (30%)
+  0:13:30.949    24G / 34G   INFO    General                 (path_extender.hpp         : 885)   Processed 954220 paths from 2385542 (40%)
+  0:13:38.709    25G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 1048576 paths from 2385542 (43%)
+  0:13:50.238    26G / 34G   INFO    General                 (path_extender.hpp         : 885)   Processed 1192775 paths from 2385542 (50%)
+  0:14:08.398    27G / 34G   INFO    General                 (path_extender.hpp         : 885)   Processed 1431330 paths from 2385542 (60%)
+  0:14:25.475    29G / 34G   INFO    General                 (path_extender.hpp         : 885)   Processed 1669885 paths from 2385542 (70%)
+  0:14:41.418    31G / 34G   INFO    General                 (path_extender.hpp         : 885)   Processed 1908440 paths from 2385542 (80%)
+  0:14:53.205    32G / 34G   INFO    General                 (path_extender.hpp         : 883)   Processed 2097152 paths from 2385542 (87%)
+  0:14:56.189    32G / 34G   INFO    General                 (path_extender.hpp         : 885)   Processed 2146995 paths from 2385542 (90%)
+  0:15:11.248    34G / 34G   INFO    General                 (launcher.cpp              : 234)   Finalizing paths
+  0:15:11.248    34G / 34G   INFO    General                 (launcher.cpp              : 236)   Deduplicating paths
+  0:15:16.082    34G / 34G   INFO    General                 (launcher.cpp              : 240)   Paths deduplicated
+  0:15:16.082    34G / 34G   INFO   PEResolver               (pe_resolver.hpp           : 295)   Removing overlaps
+  0:15:16.082    34G / 34G   INFO   PEResolver               (pe_resolver.hpp           : 305)   Marking overlaps
+  0:15:16.082    34G / 34G   INFO   OverlapRemover           (pe_resolver.hpp           : 130)   Marking start/end overlaps
+  0:15:18.428    34G / 34G   INFO   PEResolver               (pe_resolver.hpp           : 308)   Splitting paths
+  0:15:18.607    34G / 34G   INFO   PEResolver               (pe_resolver.hpp           : 313)   Deduplicating paths
+  0:15:19.940    34G / 34G   INFO   PEResolver               (pe_resolver.hpp           : 315)   Overlaps removed
+  0:15:27.380    34G / 34G   INFO    General                 (launcher.cpp              : 257)   Paths finalized
+  0:15:27.381    34G / 34G   INFO    General                 (launcher.cpp              : 427)   Closing gaps in paths
+  0:15:36.965    34G / 34G   INFO    General                 (launcher.cpp              : 455)   Gap closing completed
+  0:15:39.444    35G / 35G   INFO    General                 (launcher.cpp              : 286)   Traversing tandem repeats
+  0:16:01.203    35G / 35G   INFO    General                 (launcher.cpp              : 296)   Traversed 0 loops
+  0:16:01.203    35G / 35G   INFO    General                 (launcher.cpp              : 234)   Finalizing paths
+  0:16:01.203    35G / 35G   INFO    General                 (launcher.cpp              : 236)   Deduplicating paths
+  0:16:02.538    35G / 35G   INFO    General                 (launcher.cpp              : 240)   Paths deduplicated
+  0:16:02.538    35G / 35G   INFO   PEResolver               (pe_resolver.hpp           : 295)   Removing overlaps
+  0:16:02.538    35G / 35G   INFO   PEResolver               (pe_resolver.hpp           : 305)   Marking overlaps
+  0:16:02.538    35G / 35G   INFO   OverlapRemover           (pe_resolver.hpp           : 130)   Marking start/end overlaps
+  0:16:04.777    35G / 35G   INFO   PEResolver               (pe_resolver.hpp           : 308)   Splitting paths
+  0:16:04.916    35G / 35G   INFO   PEResolver               (pe_resolver.hpp           : 313)   Deduplicating paths
+  0:16:06.283    35G / 35G   INFO   PEResolver               (pe_resolver.hpp           : 315)   Overlaps removed
+  0:16:12.015    35G / 35G   INFO    General                 (launcher.cpp              : 257)   Paths finalized
+  0:16:16.644    43G / 43G   INFO    General                 (launcher.cpp              : 462)   Finalizing main paths
+  0:16:16.644    43G / 43G   INFO    General                 (launcher.cpp              : 279)   Read length relative cutoff 1.3 converted to 69
+  0:16:16.644    43G / 43G   INFO    General                 (launcher.cpp              : 280)   Read length absolute cutoff 110 bp converted to 69
+  0:16:16.644    43G / 43G   INFO    General                 (launcher.cpp              : 281)   Length cutoff: 69
+  0:16:17.954    43G / 43G   INFO    General                 (launcher.cpp              : 279)   Read length relative cutoff 1.6 converted to 114
+  0:16:17.954    43G / 43G   INFO    General                 (launcher.cpp              : 280)   Read length absolute cutoff 140 bp converted to 114
+  0:16:17.954    43G / 43G   INFO    General                 (launcher.cpp              : 281)   Length cutoff: 114
+  0:16:18.203    43G / 43G   INFO    General                 (launcher.cpp              : 279)   Read length relative cutoff 1.5 converted to 99
+  0:16:18.203    43G / 43G   INFO    General                 (launcher.cpp              : 280)   Read length absolute cutoff 130 bp converted to 99
+  0:16:18.203    43G / 43G   INFO    General                 (launcher.cpp              : 281)   Length cutoff: 99
+  0:16:18.608    43G / 43G   INFO    General                 (launcher.cpp              : 467)   Finalizing paths - hard
+  0:16:20.930    44G / 44G   INFO    General                 (launcher.cpp              : 279)   Read length relative cutoff 1.5 converted to 99
+  0:16:20.930    44G / 44G   INFO    General                 (launcher.cpp              : 280)   Read length absolute cutoff 130 bp converted to 99
+  0:16:20.930    44G / 44G   INFO    General                 (launcher.cpp              : 281)   Length cutoff: 99
+  0:16:22.394    43G / 44G   INFO    General                 (launcher.cpp              : 279)   Read length relative cutoff 2 converted to 175
+  0:16:22.394    43G / 44G   INFO    General                 (launcher.cpp              : 280)   Read length absolute cutoff 180 bp converted to 175
+  0:16:22.394    43G / 44G   INFO    General                 (launcher.cpp              : 281)   Length cutoff: 175
+  0:16:22.635    43G / 44G   INFO    General                 (launcher.cpp              : 279)   Read length relative cutoff 2 converted to 175
+  0:16:22.635    43G / 44G   INFO    General                 (launcher.cpp              : 280)   Read length absolute cutoff 180 bp converted to 175
+  0:16:22.635    43G / 44G   INFO    General                 (launcher.cpp              : 281)   Length cutoff: 175
+  0:16:25.529    43G / 44G   INFO    General                 (launcher.cpp              : 467)   Finalizing paths - soft
+  0:16:27.790    44G / 44G   INFO    General                 (launcher.cpp              : 279)   Read length relative cutoff 1.05 converted to 31
+  0:16:27.790    44G / 44G   INFO    General                 (launcher.cpp              : 280)   Read length absolute cutoff 85 bp converted to 31
+  0:16:27.790    44G / 44G   INFO    General                 (launcher.cpp              : 281)   Length cutoff: 31
+  0:16:29.013    43G / 44G   INFO    General                 (launcher.cpp              : 279)   Read length relative cutoff 1.5 converted to 99
+  0:16:29.013    43G / 44G   INFO    General                 (launcher.cpp              : 280)   Read length absolute cutoff 130 bp converted to 99
+  0:16:29.013    43G / 44G   INFO    General                 (launcher.cpp              : 281)   Length cutoff: 99
+  0:16:29.411    43G / 44G   INFO    General                 (launcher.cpp              : 279)   Read length relative cutoff 1.2 converted to 54
+  0:16:29.411    43G / 44G   INFO    General                 (launcher.cpp              : 280)   Read length absolute cutoff 100 bp converted to 54
+  0:16:29.411    43G / 44G   INFO    General                 (launcher.cpp              : 281)   Length cutoff: 54
+  0:16:38.068    35G / 44G   INFO    General                 (launcher.cpp              : 529)   ExSPAnder repeat resolving tool finished
+  0:16:53.168     9G / 44G   INFO   StageManager             (stage.cpp                 : 132)   STAGE == Contig Output
+  0:16:53.168     9G / 44G   INFO    General                 (contig_output_stage.cpp   :  40)   Writing GFA to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56//K127/assembly_graph_with_scaffolds.gfa
+  0:17:00.185     9G / 44G   INFO    General                 (contig_output.hpp         :  22)   Outputting contigs to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56//K127/before_rr.fasta
+  0:17:13.832     9G / 44G   INFO    General                 (contig_output_stage.cpp   :  51)   Outputting FastG graph to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56//K127/assembly_graph.fastg
+  0:17:38.601     9G / 44G   INFO    General                 (contig_output_stage.cpp   :  20)   Outputting FastG paths to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56//K127/transcripts.paths
+  0:17:43.318     9G / 44G   INFO    General                 (launch.hpp                : 149)   SPAdes finished
+  0:18:01.820   160M / 44G   INFO    General                 (main.cpp                  : 109)   Assembling time: 0 hours 18 minutes 1 seconds
+
+===== Assembling finished. Used k-mer sizes: 75, 99, 127 
+
+ * Corrected reads are in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56/corrected/
+ * Assembled transcripts are in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56/transcripts.fasta
+ * Paths in the assembly graph corresponding to the transcripts are in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56/transcripts.paths
+ * Hard filtered transcripts are in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56/hard_filtered_transcripts.fasta
+ * Soft filtered transcripts are in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56/soft_filtered_transcripts.fasta
+
+======= SPAdes pipeline finished.
+
+SPAdes log can be found here: /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/6_ZG02_S56/spades.log
+
+Thank you for using SPAdes!
+rnaSPAdes: Processed 6_ZG02_S56

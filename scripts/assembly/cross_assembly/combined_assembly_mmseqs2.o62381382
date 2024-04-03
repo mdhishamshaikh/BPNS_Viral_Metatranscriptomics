@@ -1,0 +1,251 @@
+finished concatenating assemblies
+Started MMseqs2 clustering
+easy-linclust combined_assembly.fasta cluster_results mmseqs2_tmp --min-seq-id 0.95 -c 0.95 --cov-mode 1 --threads 40 
+
+MMseqs Version:                     	15.6f452
+Cluster mode                        	0
+Max connected component depth       	1000
+Similarity type                     	2
+Threads                             	40
+Compressed                          	0
+Verbosity                           	3
+Weight file name                    	
+Cluster Weight threshold            	0.9
+Substitution matrix                 	aa:blosum62.out,nucl:nucleotide.out
+Add backtrace                       	false
+Alignment mode                      	0
+Alignment mode                      	0
+Allow wrapped scoring               	false
+E-value threshold                   	0.001
+Seq. id. threshold                  	0.95
+Min alignment length                	0
+Seq. id. mode                       	0
+Alternative alignments              	0
+Coverage threshold                  	0.95
+Coverage mode                       	1
+Max sequence length                 	65535
+Compositional bias                  	1
+Compositional bias                  	1
+Max reject                          	2147483647
+Max accept                          	2147483647
+Include identical seq. id.          	false
+Preload mode                        	0
+Pseudo count a                      	substitution:1.100,context:1.400
+Pseudo count b                      	substitution:4.100,context:5.800
+Score bias                          	0
+Realign hits                        	false
+Realign score bias                  	-0.2
+Realign max seqs                    	2147483647
+Correlation score weight            	0
+Gap open cost                       	aa:11,nucl:5
+Gap extension cost                  	aa:1,nucl:2
+Zdrop                               	40
+Alphabet size                       	aa:21,nucl:5
+k-mers per sequence                 	21
+Spaced k-mers                       	0
+Spaced k-mer pattern                	
+Scale k-mers per sequence           	aa:0.000,nucl:0.200
+Adjust k-mer length                 	false
+Mask residues                       	1
+Mask residues probability           	0.9
+Mask lower case residues            	0
+k-mer length                        	0
+Shift hash                          	67
+Split memory limit                  	0
+Include only extendable             	false
+Skip repeating k-mers               	false
+Rescore mode                        	0
+Remove hits by seq. id. and coverage	false
+Sort results                        	0
+Remove temporary files              	true
+Force restart with latest tmp       	false
+MPI runner                          	
+Database type                       	0
+Shuffle input database              	true
+Createdb mode                       	1
+Write lookup file                   	0
+Offset of numeric ids               	0
+
+createdb combined_assembly.fasta mmseqs2_tmp/10232163649286022523/input --dbtype 0 --shuffle 1 --createdb-mode 1 --write-lookup 0 --id-offset 0 --compressed 0 -v 3 
+
+Shuffle database cannot be combined with --createdb-mode 0
+We recompute with --shuffle 0
+Converting sequences
+[Multiline fasta can not be combined with --createdb-mode 0
+We recompute with --createdb-mode 1
+Time for merging to input_h: 0h 0m 0s 0ms
+Time for merging to input: 0h 0m 0s 0ms
+[===================================================================================================	1 Mio. sequences processed
+===================================================================================================	2 Mio. sequences processed
+===================================================================================================	3 Mio. sequences processed
+===================================================================================================	4 Mio. sequences processed
+===================================================================================================	5 Mio. sequences processed
+===================================================================================================	6 Mio. sequences processed
+===================================================================================================	7 Mio. sequences processed
+===================================================================================================	8 Mio. sequences processed
+===================================================================================================	9 Mio. sequences processed
+===================================================================================================	10 Mio. sequences processed
+===================================================================================================	11 Mio. sequences processed
+===================================================================================================	12 Mio. sequences processed
+===================================================================================================	13 Mio. sequences processed
+===================================================================================================	14 Mio. sequences processed
+===================================================================================================	15 Mio. sequences processed
+===================================================================================================	16 Mio. sequences processed
+===================================================================================================	17 Mio. sequences processed
+===================================================================================================	18 Mio. sequences processed
+===================================================================================================	19 Mio. sequences processed
+===================================================================================================	20 Mio. sequences processed
+===================================================================================================	21 Mio. sequences processed
+===================================================================================================	22 Mio. sequences processed
+=====================================================
+Time for merging to input_h: 0h 0m 0s 0ms
+Time for merging to input: 0h 0m 0s 0ms
+Database type: Nucleotide
+Time for processing: 0h 0m 27s 588ms
+Create directory mmseqs2_tmp/10232163649286022523/clu_tmp
+linclust mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/clu mmseqs2_tmp/10232163649286022523/clu_tmp --threads 40 -e 0.001 --min-seq-id 0.95 -c 0.95 --cov-mode 1 --spaced-kmer-mode 0 --remove-tmp-files 1 
+
+Set cluster mode GREEDY MEM.
+kmermatcher mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pref --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --alph-size aa:13,nucl:5 --min-seq-id 0.95 --kmer-per-seq 21 --spaced-kmer-mode 0 --kmer-per-seq-scale aa:0.000,nucl:0.200 --adjust-kmer-len 0 --mask 0 --mask-prob 0.9 --mask-lower-case 0 --cov-mode 1 -k 0 -c 0.95 --max-seq-len 65535 --hash-shift 67 --split-memory-limit 0 --include-only-extendable 0 --ignore-multi-kmer 0 --threads 40 --compressed 0 -v 3 --cluster-weight-threshold 0.9 
+
+kmermatcher mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pref --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --alph-size aa:13,nucl:5 --min-seq-id 0.95 --kmer-per-seq 21 --spaced-kmer-mode 0 --kmer-per-seq-scale aa:0.000,nucl:0.200 --adjust-kmer-len 0 --mask 0 --mask-prob 0.9 --mask-lower-case 0 --cov-mode 1 -k 0 -c 0.95 --max-seq-len 65535 --hash-shift 67 --split-memory-limit 0 --include-only-extendable 0 --ignore-multi-kmer 0 --threads 40 --compressed 0 -v 3 --cluster-weight-threshold 0.9 
+
+Database size: 22533623 type: Nucleotide
+
+Generate k-mers list for 1 split
+[=================================================================] 22.53M 27s 873ms
+
+Adjusted k-mer length 17
+Sort kmer 0h 0m 16s 801ms
+Sort by rep. sequence 0h 0m 10s 135ms
+Time for fill: 0h 0m 30s 61ms
+Time for merging to pref: 0h 0m 0s 0ms
+Time for processing: 0h 2m 1s 372ms
+rescorediagonal mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pref mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pref_rescore1 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --rescore-mode 0 --wrapped-scoring 0 --filter-hits 0 -e 0.001 -c 0.95 -a 0 --cov-mode 1 --min-seq-id 0.95 --min-aln-len 0 --seq-id-mode 0 --add-self-matches 0 --sort-results 0 --db-load-mode 0 --threads 40 --compressed 0 -v 3 
+
+[=================================================================] 22.53M 1m 30s 430ms
+Time for merging to pref_rescore1: 0h 0m 8s 856ms
+Time for processing: 0h 1m 45s 544ms
+clust mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pref_rescore1 mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pre_clust --cluster-mode 3 --max-iterations 1000 --similarity-type 2 --threads 40 --compressed 0 -v 3 --cluster-weight-threshold 0.9 
+
+Clustering mode: Greedy Low Mem
+Total time: 0h 0m 12s 905ms
+
+Size of the sequence database: 22533623
+Size of the alignment database: 22533623
+Number of clusters: 11693794
+
+Writing results 0h 0m 1s 531ms
+Time for merging to pre_clust: 0h 0m 0s 0ms
+Time for processing: 0h 0m 15s 876ms
+createsubdb mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/order_redundancy mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/input_step_redundancy -v 3 --subdb-mode 1 
+
+Time for merging to input_step_redundancy: 0h 0m 0s 0ms
+Time for processing: 0h 0m 3s 58ms
+createsubdb mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/order_redundancy mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pref mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pref_filter1 -v 3 --subdb-mode 1 
+
+Time for merging to pref_filter1: 0h 0m 0s 0ms
+Time for processing: 0h 0m 5s 813ms
+filterdb mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pref_filter1 mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pref_filter2 --filter-file mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/order_redundancy --threads 40 --compressed 0 -v 3 
+
+Filtering using file(s)
+[=================================================================] 11.69M 18s 914ms
+Time for merging to pref_filter2: 0h 0m 4s 584ms
+Time for processing: 0h 0m 26s 321ms
+align mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/input_step_redundancy mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/input_step_redundancy mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pref_filter2 mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/aln --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' -a 0 --alignment-mode 2 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0.95 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.95 --cov-mode 1 --max-seq-len 65535 --comp-bias-corr 1 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:11,nucl:5 --gap-extend aa:1,nucl:2 --zdrop 40 --threads 40 --compressed 0 -v 3 
+
+Compute score and coverage
+Query database size: 11693794 type: Nucleotide
+Target database size: 11693794 type: Nucleotide
+Calculation of alignments
+[=================================================================] 11.69M 2m 34s 322ms
+Time for merging to aln: 0h 0m 5s 317ms
+239465689 alignments calculated
+12966538 sequence pairs passed the thresholds (0.054148 of overall calculated)
+1.108839 hits per query sequence
+Time for processing: 0h 2m 42s 944ms
+clust mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/input_step_redundancy mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/aln mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/clust --cluster-mode 3 --max-iterations 1000 --similarity-type 2 --threads 40 --compressed 0 -v 3 --cluster-weight-threshold 0.9 
+
+Clustering mode: Greedy Low Mem
+Total time: 0h 0m 1s 536ms
+
+Size of the sequence database: 11693794
+Size of the alignment database: 11693794
+Number of clusters: 10875453
+
+Writing results 0h 0m 1s 155ms
+Time for merging to clust: 0h 0m 0s 0ms
+Time for processing: 0h 0m 3s 506ms
+mergeclusters mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/clu mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pre_clust mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/clust --threads 40 --compressed 0 -v 3 
+
+Clustering step 1
+[=================================================================] 11.69M 1s 433ms
+Clustering step 2
+[=================================================================] 10.88M 2s 980ms
+Write merged clustering
+[=================================================================] 22.53M 4s 137ms
+Time for merging to clu: 0h 0m 3s 485ms
+Time for processing: 0h 0m 9s 714ms
+rmdb mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pref_filter1 -v 3 
+
+Time for processing: 0h 0m 0s 15ms
+rmdb mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pref -v 3 
+
+Time for processing: 0h 0m 0s 506ms
+rmdb mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pref_rescore1 -v 3 
+
+Time for processing: 0h 0m 0s 105ms
+rmdb mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pre_clust -v 3 
+
+Time for processing: 0h 0m 0s 36ms
+rmdb mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/input_step_redundancy -v 3 
+
+Time for processing: 0h 0m 0s 16ms
+rmdb mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/input_step_redundancy_h -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/pref_filter2 -v 3 
+
+Time for processing: 0h 0m 0s 271ms
+rmdb mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/aln -v 3 
+
+Time for processing: 0h 0m 0s 68ms
+rmdb mmseqs2_tmp/10232163649286022523/clu_tmp/7386393443122061504/clust -v 3 
+
+Time for processing: 0h 0m 0s 19ms
+createtsv mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/clu mmseqs2_tmp/10232163649286022523/cluster.tsv --threads 40 -v 3 
+
+Time for merging to cluster.tsv: 0h 0m 5s 622ms
+Time for processing: 0h 0m 10s 38ms
+result2repseq mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/clu mmseqs2_tmp/10232163649286022523/clu_rep --db-load-mode 0 --compressed 0 --threads 40 -v 3 
+
+[=================================================================] 10.88M 1s 134ms
+Time for merging to clu_rep: 0h 0m 5s 840ms
+Time for processing: 0h 0m 9s 886ms
+result2flat mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/clu_rep mmseqs2_tmp/10232163649286022523/rep_seq.fasta --use-fasta-header -v 3 
+
+Time for processing: 0h 0m 17s 728ms
+createseqfiledb mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/clu mmseqs2_tmp/10232163649286022523/clu_seqs --threads 40 -v 3 
+
+[=================================================================] 10.88M 2s 6ms
+Time for merging to clu_seqs: 0h 0m 4s 34ms
+Time for processing: 0h 0m 9s 593ms
+result2flat mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/input mmseqs2_tmp/10232163649286022523/clu_seqs mmseqs2_tmp/10232163649286022523/all_seqs.fasta -v 3 
+
+Time for processing: 0h 1m 33s 546ms
+rmdb mmseqs2_tmp/10232163649286022523/input -v 3 
+
+Time for processing: 0h 0m 0s 584ms
+rmdb mmseqs2_tmp/10232163649286022523/input_h -v 3 
+
+Time for processing: 0h 0m 0s 97ms
+rmdb mmseqs2_tmp/10232163649286022523/clu_seqs -v 3 
+
+Time for processing: 0h 0m 0s 573ms
+rmdb mmseqs2_tmp/10232163649286022523/clu_rep -v 3 
+
+Time for processing: 0h 0m 0s 74ms
+rmdb mmseqs2_tmp/10232163649286022523/clu -v 3 
+
+Time for processing: 0h 0m 0s 34ms
+Finished MMseqs2 clustering

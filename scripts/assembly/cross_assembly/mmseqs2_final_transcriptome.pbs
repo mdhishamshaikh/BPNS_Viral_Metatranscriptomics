@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+#PBS -N mmseqs2_final_transcriptome
+#PBS -l nodes=1:ppn= 45 #1 of node requested; 45 processors in total
+#PBS -l walltime=72:00:00 # 72 hours walltime
+#PBS -l mem=235gb #235 Gb memory in total
+#PBS -m abe
+#PBS -M MohammedHisham.Shaikh@ugent.be
+
+#Making sure I am on the rigth cluster
+module swap cluster/doduo
+
+cd /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/scripts/assembly/cross_assembly
+
+# Unset OMP_PROC_BIND
+unset OMP_PROC_BIND
+. mmseqs2_final_transcriptome.sh

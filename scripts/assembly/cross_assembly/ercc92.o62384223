@@ -1,0 +1,266 @@
+easy-search ERCC92_spike/ERCC92.fa standardized_contigs_assembly.fasta ercc92_alignment.m8 mmseqs2_tmp --search-type 3 --threads 40 
+
+MMseqs Version:                        	15.6f452
+Substitution matrix                    	aa:blosum62.out,nucl:nucleotide.out
+Add backtrace                          	false
+Alignment mode                         	3
+Alignment mode                         	0
+Allow wrapped scoring                  	false
+E-value threshold                      	0.001
+Seq. id. threshold                     	0
+Min alignment length                   	0
+Seq. id. mode                          	0
+Alternative alignments                 	0
+Coverage threshold                     	0
+Coverage mode                          	0
+Max sequence length                    	65535
+Compositional bias                     	1
+Compositional bias                     	1
+Max reject                             	2147483647
+Max accept                             	2147483647
+Include identical seq. id.             	false
+Preload mode                           	0
+Pseudo count a                         	substitution:1.100,context:1.400
+Pseudo count b                         	substitution:4.100,context:5.800
+Score bias                             	0
+Realign hits                           	false
+Realign score bias                     	-0.2
+Realign max seqs                       	2147483647
+Correlation score weight               	0
+Gap open cost                          	aa:11,nucl:5
+Gap extension cost                     	aa:1,nucl:2
+Zdrop                                  	40
+Threads                                	40
+Compressed                             	0
+Verbosity                              	3
+Seed substitution matrix               	aa:VTML80.out,nucl:nucleotide.out
+Sensitivity                            	5.7
+k-mer length                           	0
+Target search mode                     	0
+k-score                                	seq:2147483647,prof:2147483647
+Alphabet size                          	aa:21,nucl:5
+Max results per query                  	300
+Split database                         	0
+Split mode                             	2
+Split memory limit                     	0
+Diagonal scoring                       	true
+Exact k-mer matching                   	0
+Mask residues                          	1
+Mask residues probability              	0.9
+Mask lower case residues               	0
+Minimum diagonal score                 	15
+Selected taxa                          	
+Spaced k-mers                          	1
+Spaced k-mer pattern                   	
+Local temporary path                   	
+Rescore mode                           	0
+Remove hits by seq. id. and coverage   	false
+Sort results                           	0
+Mask profile                           	1
+Profile E-value threshold              	0.001
+Global sequence weighting              	false
+Allow deletions                        	false
+Filter MSA                             	1
+Use filter only at N seqs              	0
+Maximum seq. id. threshold             	0.9
+Minimum seq. id.                       	0.0
+Minimum score per column               	-20
+Minimum coverage                       	0
+Select N most diverse seqs             	1000
+Pseudo count mode                      	0
+Min codons in orf                      	30
+Max codons in length                   	32734
+Max orf gaps                           	2147483647
+Contig start mode                      	2
+Contig end mode                        	2
+Orf start mode                         	1
+Forward frames                         	1,2,3
+Reverse frames                         	1,2,3
+Translation table                      	1
+Translate orf                          	0
+Use all table starts                   	false
+Offset of numeric ids                  	0
+Create lookup                          	0
+Add orf stop                           	false
+Overlap between sequences              	0
+Sequence split mode                    	1
+Header split mode                      	0
+Chain overlapping alignments           	0
+Merge query                            	1
+Search type                            	3
+Search iterations                      	1
+Start sensitivity                      	4
+Search steps                           	1
+Prefilter mode                         	0
+Exhaustive search mode                 	false
+Filter results during exhaustive search	0
+Strand selection                       	1
+LCA search mode                        	false
+Disk space limit                       	0
+MPI runner                             	
+Force restart with latest tmp          	false
+Remove temporary files                 	true
+Alignment format                       	0
+Format alignment output                	query,target,fident,alnlen,mismatch,gapopen,qstart,qend,tstart,tend,evalue,bits
+Database output                        	false
+Overlap threshold                      	0
+Database type                          	0
+Shuffle input database                 	true
+Createdb mode                          	0
+Write lookup file                      	0
+Greedy best hits                       	false
+
+createdb ERCC92_spike/ERCC92.fa mmseqs2_tmp/11645617831920474740/query --dbtype 0 --shuffle 1 --createdb-mode 0 --write-lookup 0 --id-offset 0 --compressed 0 -v 3 
+
+Converting sequences
+[
+Time for merging to query_h: 0h 0m 0s 16ms
+Time for merging to query: 0h 0m 0s 18ms
+Database type: Nucleotide
+Time for processing: 0h 0m 0s 75ms
+createdb standardized_contigs_assembly.fasta mmseqs2_tmp/11645617831920474740/target --dbtype 0 --shuffle 1 --createdb-mode 0 --write-lookup 0 --id-offset 0 --compressed 0 -v 3 
+
+Converting sequences
+[===================================================================================================	1 Mio. sequences processed
+===================================================================================================	2 Mio. sequences processed
+===================================================================================================	3 Mio. sequences processed
+===================================================================================================	4 Mio. sequences processed
+===================================================================================================	5 Mio. sequences processed
+===================================================================================================	6 Mio. sequences processed
+===================================================================================================	7 Mio. sequences processed
+===================================================================================================	8 Mio. sequences processed
+===================================================================================================	9 Mio. sequences processed
+===================================================================================================	10 Mio. sequences processed
+=======================================================================================
+Time for merging to target_h: 0h 0m 1s 189ms
+Time for merging to target: 0h 0m 5s 66ms
+Database type: Nucleotide
+Time for processing: 0h 0m 29s 360ms
+Create directory mmseqs2_tmp/11645617831920474740/search_tmp
+search mmseqs2_tmp/11645617831920474740/query mmseqs2_tmp/11645617831920474740/target mmseqs2_tmp/11645617831920474740/result mmseqs2_tmp/11645617831920474740/search_tmp --alignment-mode 3 --threads 40 -s 5.7 --search-type 3 --remove-tmp-files 1 
+
+splitsequence mmseqs2_tmp/11645617831920474740/target mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/target_seqs_split --max-seq-len 10000 --sequence-overlap 0 --sequence-split-mode 1 --headers-split-mode 0 --create-lookup 0 --threads 40 --compressed 0 -v 3 
+
+[=================================================================] 10.88M 0s 953ms
+Time for merging to target_seqs_split_h: 0h 0m 2s 136ms
+Time for merging to target_seqs_split: 0h 0m 2s 327ms
+Time for processing: 0h 0m 8s 79ms
+extractframes mmseqs2_tmp/11645617831920474740/query mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/query_seqs --forward-frames 1 --reverse-frames 1 --create-lookup 0 --threads 40 --compressed 0 -v 3 
+
+[================================================================] 92 0s 46ms
+=Time for merging to query_seqs_h: 0h 0m 0s 9ms
+Time for merging to query_seqs: 0h 0m 0s 9ms
+Time for processing: 0h 0m 0s 95ms
+splitsequence mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/query_seqs mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/query_seqs_split --max-seq-len 10000 --sequence-overlap 0 --sequence-split-mode 1 --headers-split-mode 0 --create-lookup 0 --threads 40 --compressed 0 -v 3 
+
+Time for processing: 0h 0m 0s 1ms
+prefilter mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/query_seqs_split mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/target_seqs_split mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/search/pref_0 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --seed-sub-mat 'aa:VTML80.out,nucl:nucleotide.out' -k 15 --target-search-mode 0 --k-score seq:2147483647,prof:2147483647 --alph-size aa:21,nucl:5 --max-seq-len 10000 --max-seqs 300 --split 0 --split-mode 2 --split-memory-limit 0 -c 0 --cov-mode 0 --comp-bias-corr 1 --comp-bias-corr-scale 1 --diag-score 1 --exact-kmer-matching 1 --mask 1 --mask-prob 0.9 --mask-lower-case 0 --min-ungapped-score 15 --add-self-matches 0 --spaced-kmer-mode 1 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --threads 40 --compressed 0 -v 3 -s 5.7 
+
+Query database size: 184 type: Nucleotide
+Estimated memory consumption: 53G
+Target database size: 10875464 type: Nucleotide
+Index table k-mer threshold: 0 at k-mer size 15 
+Index table: counting k-mers
+[=================================================================] 10.88M 40s 532ms
+Index table: Masked residues: 116950039
+Index table: fill
+[=================================================================] 10.88M 34s 151ms
+Index statistics
+Entries:          3383771424
+DB size:          27554 MB
+Avg k-mer size:   3.151383
+Top 10 k-mers
+    CTTTGAAGGAAGCAT	13160
+    TCTTGTAGAGACAGC	12782
+    GCTGTTCATTCAGGA	9577
+    TGCTATTCCTAAAAG	9540
+    ATTCTGATCACACAG	8966
+    AGAGGAATAAAATAG	8365
+    AAGAACCCGAGCACT	4211
+    ATCCTGTAAAATCAG	4150
+    CAATAAGTTATATAG	4094
+    TTCCTGTAAAATCAG	3433
+Time for index table init: 0h 1m 19s 508ms
+Process prefiltering step 1 of 1
+
+k-mer similarity threshold: 0
+Starting prefiltering scores calculation (step 1 of 1)
+Query db start 1 to 184
+Target db start 1 to 10875464
+[=================================================================] 184 0s 102ms
+
+0.970712 k-mers per position
+25209 DB matches per sequence
+0 overflows
+69 sequences passed prefiltering per query sequence
+43 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_0: 0h 0m 0s 15ms
+Time for processing: 0h 1m 21s 648ms
+align mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/query_seqs_split mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/target_seqs_split mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/search/pref_0 mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/aln --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 0.001 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0 --cov-mode 0 --max-seq-len 10000 --comp-bias-corr 1 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:11,nucl:5 --gap-extend aa:1,nucl:2 --zdrop 40 --threads 40 --compressed 0 -v 3 
+
+Compute score, coverage and sequence identity
+Query database size: 184 type: Nucleotide
+Target database size: 10875464 type: Nucleotide
+Calculation of alignments
+[=================================================================] 184 0s 171ms
+Time for merging to aln: 0h 0m 0s 9ms
+12829 alignments calculated
+7420 sequence pairs passed the thresholds (0.578377 of overall calculated)
+40.326088 hits per query sequence
+Time for processing: 0h 0m 1s 526ms
+rmdb mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/search/pref_0 -v 3 
+
+Time for processing: 0h 0m 0s 5ms
+rmdb mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/search/aln_0 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/search/input_0 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/search/aln_merge -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+offsetalignment mmseqs2_tmp/11645617831920474740/query mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/query_seqs_split mmseqs2_tmp/11645617831920474740/target mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/target_seqs_split mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/aln mmseqs2_tmp/11645617831920474740/result --chain-alignments 0 --merge-query 1 --search-type 3 --threads 40 --compressed 0 --db-load-mode 0 -v 3 
+
+Computing ORF lookup
+Computing contig offsets
+Computing contig lookup
+Time for contig lookup: 0h 0m 0s 79ms
+Writing results to: mmseqs2_tmp/11645617831920474740/result
+=====[============================================================] 92 0s 144ms
+
+Time for merging to result: 0h 0m 0s 4ms
+Time for processing: 0h 0m 1s 540ms
+rmdb mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/q_orfs -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/q_orfs_aa -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/t_orfs -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb mmseqs2_tmp/11645617831920474740/search_tmp/8037557200212451814/t_orfs_aa -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+convertalis mmseqs2_tmp/11645617831920474740/query mmseqs2_tmp/11645617831920474740/target mmseqs2_tmp/11645617831920474740/result ercc92_alignment.m8 --sub-mat 'aa:blosum62.out,nucl:nucleotide.out' --format-mode 0 --format-output query,target,fident,alnlen,mismatch,gapopen,qstart,qend,tstart,tend,evalue,bits --translation-table 1 --gap-open aa:11,nucl:5 --gap-extend aa:1,nucl:2 --db-output 0 --db-load-mode 0 --search-type 3 --threads 40 --compressed 0 -v 3 
+
+=[================================================================] 92 0s 50ms
+Time for merging to ercc92_alignment.m8: 0h 0m 0s 9ms
+Time for processing: 0h 0m 0s 907ms
+rmdb mmseqs2_tmp/11645617831920474740/result -v 3 
+
+Time for processing: 0h 0m 0s 2ms
+rmdb mmseqs2_tmp/11645617831920474740/target -v 3 
+
+Time for processing: 0h 0m 0s 286ms
+rmdb mmseqs2_tmp/11645617831920474740/target_h -v 3 
+
+Time for processing: 0h 0m 0s 27ms
+rmdb mmseqs2_tmp/11645617831920474740/query -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb mmseqs2_tmp/11645617831920474740/query_h -v 3 
+
+Time for processing: 0h 0m 0s 0ms

@@ -9,7 +9,8 @@
 Performed FastQC. MultiQC.
 Trimmomatic was used to exclude lower quality squences.
 Assemblies were constructed using rnaSPAdes. 
-Trying rnaQUAST for assembly quality. 
+Trying rnaQUAST for assembly quality. #waiting
+Setting up geNomad
 
 
 

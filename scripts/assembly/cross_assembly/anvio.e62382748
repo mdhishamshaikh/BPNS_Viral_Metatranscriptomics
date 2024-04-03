@@ -1,0 +1,25 @@
+Input ........................................: cluster_results_rep_seq.fasta
+Output .......................................: standardized_contigs_assembly.fasta
+
+WHAT WAS THERE
+===============================================
+Total num contigs ............................: 10,875,453
+Total num nucleotides ........................: 3,835,413,292
+
+WHAT WAS ASKED
+===============================================
+Simplify deflines? ...........................: Yes
+Add prefix to sequence names? ................: No
+Minimum length of contigs to keep ............: 0
+Max % gaps allowed ...........................: 100.00%
+Max num gaps allowed .........................: 1,000,000
+Exclude specific sequences? ..................: No
+Keep specific sequences? .....................: No
+Enforce sequence type? .......................: No
+
+WHAT HAPPENED
+===============================================
+Contigs removed ..............................: 0 (0.00% of all)
+Nucleotides removed ..........................: 0 (0.00% of all)
+Nucleotides modified .........................: 0 (0.00000% of all)
+Deflines simplified ..........................: True

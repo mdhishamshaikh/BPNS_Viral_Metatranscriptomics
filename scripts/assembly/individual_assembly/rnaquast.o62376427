@@ -1,0 +1,1058 @@
+String not found in: /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/F_130_S25/spades.log
+rnaQUAST: Processing 1_130_S31
+/kyukon/data/gent/vo/001/gvo00125/vsc44392/viral_tools/rnaquast/rnaQUAST.py --transcripts /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_130_S31/1_130_S31_transcripts.fasta --reference /data/gent/vo/001/gvo00125/vsc44392/viral_tools/phylodb/phylodb_database/phylodb_1.076.pep.fa --output_dir /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31 --threads 45
+
+rnaQUAST: 2.2.4
+
+System information:
+  OS: Linux-4.18.0-477.43.1.el8_8.x86_64-x86_64-with-glibc2.17 (linux_64)
+  Python version: 3.8.19
+  CPUs number: 96
+
+External tools:
+  matplotlib: 3.5.3
+  joblib: 1.3.2
+  gffutils: 0.12
+  blastn: 2.2.31+
+  makeblastdb: 2.2.31+
+  gmap: 2024-03-15
+
+Started: 2024-04-02 12:14:33
+
+Logging to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/logs/rnaQUAST.log
+
+2024-04-02 12:14:33
+Getting reference...
+Done.
+Using non strand specific transcripts...
+
+  2024-04-02 12:15:42
+  Getting transcripts from /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_130_S31/1_130_S31_transcripts.fasta...
+  Done.
+
+2024-04-02 12:15:43
+Getting upper case fasta...
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/tmp/phylodb_1.076.pep.upper.fa
+
+2024-04-02 12:16:16
+Creating genome index by gmap_build...
+  logs can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/logs/gmap_build.out.log and /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/logs/gmap_build.err.log
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/tmp/phylodb_1.076.pep.upper
+
+GMAP_BUILD TIME: 3:54:07.756118
+
+
+
+2024-04-02 16:10:24
+Aligning 1_130_S31_transcripts to phylodb_1.076.pep.upper...
+  log can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/logs/gmapl.1_130_S31_transcripts.err.log.
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/tmp/1_130_S31_transcripts.psl
+
+GMAP TIME: 0:03:05.836199
+
+
+
+2024-04-02 16:13:30
+Transcripts:
+  /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_130_S31/1_130_S31_transcripts.fasta -> 1_130_S31_transcripts
+Reference:
+  /data/gent/vo/001/gvo00125/vsc44392/viral_tools/phylodb/phylodb_database/phylodb_1.076.pep.fa
+
+
+Processing transcripts from /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_130_S31/1_130_S31_transcripts.fasta:
+
+  2024-04-02 16:13:30
+  Getting GMAP (or BLAT) alignments report files...
+    saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/tmp/1_130_S31_transcripts.assembled.best.psl (contains best alignments for assembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/tmp/1_130_S31_transcripts.uniquely.psl (contains best alignments for uniquely aligned assembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/tmp/1_130_S31_transcripts.paralogs.best.psl (contains best alignments for assembled transcripts having paralogs)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/tmp/1_130_S31_transcripts.misassembled.best.psl (contains best alignments for misassembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/tmp/1_130_S31_transcripts.misassembled.psl (contains all alignments for misassembled transcripts)
+
+  2024-04-02 16:13:31
+  Processing assembled aligned transcripts...
+  Done.
+
+  2024-04-02 16:13:31
+  Processing misassembled aligned transcripts...
+  Done.
+
+  2024-04-02 16:13:31
+  Getting BASIC TRANSCRIPTS metrics...
+  Done.
+  Getting ALIGNMENT metrics...
+  Done.
+  Getting SENSITIVITY metrics...
+
+2024-04-02 16:13:53
+  Running GeneMarkS-T (Gene Prediction in Transcripts)...
+
+ERROR! GeneMarkS-T failed for 1_130_S31_transcripts!
+    logs can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/logs/1_130_S31_transcripts.GeneMarkS_T.out.log and /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/logs/1_130_S31_transcripts.GeneMarkS_T.err.log.
+  Done.
+
+Getting SEPARATED report for 1_130_S31_transcripts...
+
+  2024-04-02 16:13:54
+  Getting TXT report...
+    Getting BASIC TRANSCRIPTS METRICS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/basic_metrics.txt
+    Getting ALIGNMENT METRICS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/alignment_metrics.txt
+    Getting ALIGNMENT METRICS FOR MISASSEMBLED (CHIMERIC) TRANSCRIPTS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/misassemblies.txt
+    Getting ASSEMBLY COMPLETENESS (SENSITIVITY) report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/sensitivity.txt
+    Getting ASSEMBLY SPECIFICITY report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/specificity.txt
+  Done.
+
+  2024-04-02 16:13:54
+  Getting DISTRIBUTION report...
+    Drawing cumulative transcript / isoform length plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/transcript_length.png
+    Drawing cumulative blocks / exons length plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/block_length.png
+    Drawing cumulative transcript aligned fraction plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/x-aligned.png
+    Drawing cumulative number of blocks / exons per alignment / isoform plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/blocks_per_alignment.png
+    Drawing cumulative alignment multiplicity plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/alignment_multiplicity.png
+    Drawing cumulative substitution errors per alignment plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/mismatch_rate.png
+    Drawing Nx plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/Nx.png
+    Drawing NAx plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/NAx.png
+  Done.
+
+  2024-04-02 16:13:56
+  Getting OTHER reports...
+    Getting Unaligned transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/1_130_S31_transcripts.unaligned.fasta
+    Getting Paralogous transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/1_130_S31_transcripts.paralogs.fasta
+    Getting Misassembled transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/1_130_S31_transcripts.misassembled.fasta
+    Getting Misassembled by BLAT transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/1_130_S31_transcripts.misassembled.blat.fasta
+    Getting Misassembled by BLASTN transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/1_130_S31_transcripts.misassembled.blast.fasta
+    Getting Unique aligned transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output/1_130_S31_transcripts.correct.fasta
+  Done.
+
+2024-04-02 16:13:57
+Getting SHORT SUMMARY report...
+  saved to
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/short_report.txt
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/short_report.tex
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/short_report.pdf
+
+THE QUALITY OF TRANSCRIPTOME ASSEMBLY DONE. RESULTS: /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31
+
+Separated assemblies reports are saved to
+  /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/1_130_S31_transcripts_output
+  PDF version (tables and plots) saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/short_report.pdf
+  TXT version (tables and plots) saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/short_report.txt
+
+Log saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_130_S31/logs/rnaQUAST.log
+
+Finished: 2024-04-02 16:14:00
+Elapsed time: 3:59:26.053608
+NOTICEs: 0; WARNINGs: 0; non-fatal ERRORs: 1
+
+non-fatal ERRORs:
+  non-fatal ERROR: GeneMarkS-T failed for 1_130_S31_transcripts!
+
+Thank you for using rnaQUAST!
+
+rnaQUAST: Processed 1_130_S31
+rnaQUAST: Processing 1_330_S34
+/kyukon/data/gent/vo/001/gvo00125/vsc44392/viral_tools/rnaquast/rnaQUAST.py --transcripts /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_330_S34/1_330_S34_transcripts.fasta --reference /data/gent/vo/001/gvo00125/vsc44392/viral_tools/phylodb/phylodb_database/phylodb_1.076.pep.fa --output_dir /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34 --threads 45
+
+rnaQUAST: 2.2.4
+
+System information:
+  OS: Linux-4.18.0-477.43.1.el8_8.x86_64-x86_64-with-glibc2.17 (linux_64)
+  Python version: 3.8.19
+  CPUs number: 96
+
+External tools:
+  matplotlib: 3.5.3
+  joblib: 1.3.2
+  gffutils: 0.12
+  blastn: 2.2.31+
+  makeblastdb: 2.2.31+
+  gmap: 2024-03-15
+
+Started: 2024-04-02 16:14:14
+
+Logging to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/logs/rnaQUAST.log
+
+2024-04-02 16:14:14
+Getting reference...
+Done.
+Using non strand specific transcripts...
+
+  2024-04-02 16:15:22
+  Getting transcripts from /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_330_S34/1_330_S34_transcripts.fasta...
+  Done.
+
+2024-04-02 16:15:23
+Getting upper case fasta...
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/tmp/phylodb_1.076.pep.upper.fa
+
+2024-04-02 16:15:56
+Creating genome index by gmap_build...
+  logs can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/logs/gmap_build.out.log and /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/logs/gmap_build.err.log
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/tmp/phylodb_1.076.pep.upper
+
+GMAP_BUILD TIME: 3:52:15.824667
+
+
+
+2024-04-02 20:08:12
+Aligning 1_330_S34_transcripts to phylodb_1.076.pep.upper...
+  log can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/logs/gmapl.1_330_S34_transcripts.err.log.
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/tmp/1_330_S34_transcripts.psl
+
+GMAP TIME: 0:03:17.162097
+
+
+
+2024-04-02 20:11:29
+Transcripts:
+  /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_330_S34/1_330_S34_transcripts.fasta -> 1_330_S34_transcripts
+Reference:
+  /data/gent/vo/001/gvo00125/vsc44392/viral_tools/phylodb/phylodb_database/phylodb_1.076.pep.fa
+
+
+Processing transcripts from /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_330_S34/1_330_S34_transcripts.fasta:
+
+  2024-04-02 20:11:29
+  Getting GMAP (or BLAT) alignments report files...
+    saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/tmp/1_330_S34_transcripts.assembled.best.psl (contains best alignments for assembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/tmp/1_330_S34_transcripts.uniquely.psl (contains best alignments for uniquely aligned assembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/tmp/1_330_S34_transcripts.paralogs.best.psl (contains best alignments for assembled transcripts having paralogs)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/tmp/1_330_S34_transcripts.misassembled.best.psl (contains best alignments for misassembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/tmp/1_330_S34_transcripts.misassembled.psl (contains all alignments for misassembled transcripts)
+
+  2024-04-02 20:11:30
+  Processing assembled aligned transcripts...
+  Done.
+
+  2024-04-02 20:11:30
+  Processing misassembled aligned transcripts...
+  Done.
+
+  2024-04-02 20:11:30
+  Getting BASIC TRANSCRIPTS metrics...
+  Done.
+  Getting ALIGNMENT metrics...
+  Done.
+  Getting SENSITIVITY metrics...
+
+2024-04-02 20:11:54
+  Running GeneMarkS-T (Gene Prediction in Transcripts)...
+
+ERROR! GeneMarkS-T failed for 1_330_S34_transcripts!
+    logs can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/logs/1_330_S34_transcripts.GeneMarkS_T.out.log and /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/logs/1_330_S34_transcripts.GeneMarkS_T.err.log.
+  Done.
+
+Getting SEPARATED report for 1_330_S34_transcripts...
+
+  2024-04-02 20:11:54
+  Getting TXT report...
+    Getting BASIC TRANSCRIPTS METRICS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/basic_metrics.txt
+    Getting ALIGNMENT METRICS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/alignment_metrics.txt
+    Getting ALIGNMENT METRICS FOR MISASSEMBLED (CHIMERIC) TRANSCRIPTS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/misassemblies.txt
+    Getting ASSEMBLY COMPLETENESS (SENSITIVITY) report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/sensitivity.txt
+    Getting ASSEMBLY SPECIFICITY report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/specificity.txt
+  Done.
+
+  2024-04-02 20:11:54
+  Getting DISTRIBUTION report...
+    Drawing cumulative transcript / isoform length plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/transcript_length.png
+    Drawing cumulative blocks / exons length plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/block_length.png
+    Drawing cumulative transcript aligned fraction plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/x-aligned.png
+    Drawing cumulative number of blocks / exons per alignment / isoform plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/blocks_per_alignment.png
+    Drawing cumulative alignment multiplicity plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/alignment_multiplicity.png
+    Drawing cumulative substitution errors per alignment plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/mismatch_rate.png
+    Drawing Nx plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/Nx.png
+    Drawing NAx plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/NAx.png
+  Done.
+
+  2024-04-02 20:11:56
+  Getting OTHER reports...
+    Getting Unaligned transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/1_330_S34_transcripts.unaligned.fasta
+    Getting Paralogous transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/1_330_S34_transcripts.paralogs.fasta
+    Getting Misassembled transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/1_330_S34_transcripts.misassembled.fasta
+    Getting Misassembled by BLAT transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/1_330_S34_transcripts.misassembled.blat.fasta
+    Getting Misassembled by BLASTN transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/1_330_S34_transcripts.misassembled.blast.fasta
+    Getting Unique aligned transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output/1_330_S34_transcripts.correct.fasta
+  Done.
+
+2024-04-02 20:11:57
+Getting SHORT SUMMARY report...
+  saved to
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/short_report.txt
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/short_report.tex
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/short_report.pdf
+
+THE QUALITY OF TRANSCRIPTOME ASSEMBLY DONE. RESULTS: /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34
+
+Separated assemblies reports are saved to
+  /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/1_330_S34_transcripts_output
+  PDF version (tables and plots) saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/short_report.pdf
+  TXT version (tables and plots) saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/short_report.txt
+
+Log saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_330_S34/logs/rnaQUAST.log
+
+Finished: 2024-04-02 20:11:59
+Elapsed time: 3:57:45.661890
+NOTICEs: 0; WARNINGs: 0; non-fatal ERRORs: 1
+
+non-fatal ERRORs:
+  non-fatal ERROR: GeneMarkS-T failed for 1_330_S34_transcripts!
+
+Thank you for using rnaQUAST!
+
+rnaQUAST: Processed 1_330_S34
+rnaQUAST: Processing 1_700_S32
+/kyukon/data/gent/vo/001/gvo00125/vsc44392/viral_tools/rnaquast/rnaQUAST.py --transcripts /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_700_S32/1_700_S32_transcripts.fasta --reference /data/gent/vo/001/gvo00125/vsc44392/viral_tools/phylodb/phylodb_database/phylodb_1.076.pep.fa --output_dir /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32 --threads 45
+
+rnaQUAST: 2.2.4
+
+System information:
+  OS: Linux-4.18.0-477.43.1.el8_8.x86_64-x86_64-with-glibc2.17 (linux_64)
+  Python version: 3.8.19
+  CPUs number: 96
+
+External tools:
+  matplotlib: 3.5.3
+  joblib: 1.3.2
+  gffutils: 0.12
+  blastn: 2.2.31+
+  makeblastdb: 2.2.31+
+  gmap: 2024-03-15
+
+Started: 2024-04-02 20:12:13
+
+Logging to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/logs/rnaQUAST.log
+
+2024-04-02 20:12:13
+Getting reference...
+Done.
+Using non strand specific transcripts...
+
+  2024-04-02 20:13:23
+  Getting transcripts from /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_700_S32/1_700_S32_transcripts.fasta...
+  Done.
+
+2024-04-02 20:13:24
+Getting upper case fasta...
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/tmp/phylodb_1.076.pep.upper.fa
+
+2024-04-02 20:14:09
+Creating genome index by gmap_build...
+  logs can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/logs/gmap_build.out.log and /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/logs/gmap_build.err.log
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/tmp/phylodb_1.076.pep.upper
+
+GMAP_BUILD TIME: 3:52:30.311668
+
+
+
+2024-04-03 00:06:39
+Aligning 1_700_S32_transcripts to phylodb_1.076.pep.upper...
+  log can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/logs/gmapl.1_700_S32_transcripts.err.log.
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/tmp/1_700_S32_transcripts.psl
+
+GMAP TIME: 0:03:56.684504
+
+
+
+2024-04-03 00:10:36
+Transcripts:
+  /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_700_S32/1_700_S32_transcripts.fasta -> 1_700_S32_transcripts
+Reference:
+  /data/gent/vo/001/gvo00125/vsc44392/viral_tools/phylodb/phylodb_database/phylodb_1.076.pep.fa
+
+
+Processing transcripts from /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_700_S32/1_700_S32_transcripts.fasta:
+
+  2024-04-03 00:10:36
+  Getting GMAP (or BLAT) alignments report files...
+    saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/tmp/1_700_S32_transcripts.assembled.best.psl (contains best alignments for assembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/tmp/1_700_S32_transcripts.uniquely.psl (contains best alignments for uniquely aligned assembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/tmp/1_700_S32_transcripts.paralogs.best.psl (contains best alignments for assembled transcripts having paralogs)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/tmp/1_700_S32_transcripts.misassembled.best.psl (contains best alignments for misassembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/tmp/1_700_S32_transcripts.misassembled.psl (contains all alignments for misassembled transcripts)
+
+  2024-04-03 00:10:37
+  Processing assembled aligned transcripts...
+  Done.
+
+  2024-04-03 00:10:37
+  Processing misassembled aligned transcripts...
+  Done.
+
+  2024-04-03 00:10:37
+  Getting BASIC TRANSCRIPTS metrics...
+  Done.
+  Getting ALIGNMENT metrics...
+  Done.
+  Getting SENSITIVITY metrics...
+
+2024-04-03 00:11:02
+  Running GeneMarkS-T (Gene Prediction in Transcripts)...
+
+ERROR! GeneMarkS-T failed for 1_700_S32_transcripts!
+    logs can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/logs/1_700_S32_transcripts.GeneMarkS_T.out.log and /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/logs/1_700_S32_transcripts.GeneMarkS_T.err.log.
+  Done.
+
+Getting SEPARATED report for 1_700_S32_transcripts...
+
+  2024-04-03 00:11:02
+  Getting TXT report...
+    Getting BASIC TRANSCRIPTS METRICS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/basic_metrics.txt
+    Getting ALIGNMENT METRICS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/alignment_metrics.txt
+    Getting ALIGNMENT METRICS FOR MISASSEMBLED (CHIMERIC) TRANSCRIPTS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/misassemblies.txt
+    Getting ASSEMBLY COMPLETENESS (SENSITIVITY) report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/sensitivity.txt
+    Getting ASSEMBLY SPECIFICITY report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/specificity.txt
+  Done.
+
+  2024-04-03 00:11:02
+  Getting DISTRIBUTION report...
+    Drawing cumulative transcript / isoform length plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/transcript_length.png
+    Drawing cumulative blocks / exons length plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/block_length.png
+    Drawing cumulative transcript aligned fraction plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/x-aligned.png
+    Drawing cumulative number of blocks / exons per alignment / isoform plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/blocks_per_alignment.png
+    Drawing cumulative alignment multiplicity plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/alignment_multiplicity.png
+    Drawing cumulative substitution errors per alignment plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/mismatch_rate.png
+    Drawing Nx plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/Nx.png
+    Drawing NAx plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/NAx.png
+  Done.
+
+  2024-04-03 00:11:04
+  Getting OTHER reports...
+    Getting Unaligned transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/1_700_S32_transcripts.unaligned.fasta
+    Getting Paralogous transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/1_700_S32_transcripts.paralogs.fasta
+    Getting Misassembled transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/1_700_S32_transcripts.misassembled.fasta
+    Getting Misassembled by BLAT transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/1_700_S32_transcripts.misassembled.blat.fasta
+    Getting Misassembled by BLASTN transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/1_700_S32_transcripts.misassembled.blast.fasta
+    Getting Unique aligned transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output/1_700_S32_transcripts.correct.fasta
+  Done.
+
+2024-04-03 00:11:05
+Getting SHORT SUMMARY report...
+  saved to
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/short_report.txt
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/short_report.tex
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/short_report.pdf
+
+THE QUALITY OF TRANSCRIPTOME ASSEMBLY DONE. RESULTS: /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32
+
+Separated assemblies reports are saved to
+  /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/1_700_S32_transcripts_output
+  PDF version (tables and plots) saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/short_report.pdf
+  TXT version (tables and plots) saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/short_report.txt
+
+Log saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_700_S32/logs/rnaQUAST.log
+
+Finished: 2024-04-03 00:11:07
+Elapsed time: 3:58:53.788749
+NOTICEs: 0; WARNINGs: 0; non-fatal ERRORs: 1
+
+non-fatal ERRORs:
+  non-fatal ERROR: GeneMarkS-T failed for 1_700_S32_transcripts!
+
+Thank you for using rnaQUAST!
+
+rnaQUAST: Processed 1_700_S32
+rnaQUAST: Processing 1_780_S33
+/kyukon/data/gent/vo/001/gvo00125/vsc44392/viral_tools/rnaquast/rnaQUAST.py --transcripts /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_780_S33/1_780_S33_transcripts.fasta --reference /data/gent/vo/001/gvo00125/vsc44392/viral_tools/phylodb/phylodb_database/phylodb_1.076.pep.fa --output_dir /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33 --threads 45
+
+rnaQUAST: 2.2.4
+
+System information:
+  OS: Linux-4.18.0-477.43.1.el8_8.x86_64-x86_64-with-glibc2.17 (linux_64)
+  Python version: 3.8.19
+  CPUs number: 96
+
+External tools:
+  matplotlib: 3.5.3
+  joblib: 1.3.2
+  gffutils: 0.12
+  blastn: 2.2.31+
+  makeblastdb: 2.2.31+
+  gmap: 2024-03-15
+
+Started: 2024-04-03 00:11:21
+
+Logging to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/logs/rnaQUAST.log
+
+2024-04-03 00:11:21
+Getting reference...
+Done.
+Using non strand specific transcripts...
+
+  2024-04-03 00:12:31
+  Getting transcripts from /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_780_S33/1_780_S33_transcripts.fasta...
+  Done.
+
+2024-04-03 00:12:32
+Getting upper case fasta...
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/tmp/phylodb_1.076.pep.upper.fa
+
+2024-04-03 00:13:06
+Creating genome index by gmap_build...
+  logs can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/logs/gmap_build.out.log and /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/logs/gmap_build.err.log
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/tmp/phylodb_1.076.pep.upper
+
+GMAP_BUILD TIME: 3:52:17.827467
+
+
+
+2024-04-03 04:05:24
+Aligning 1_780_S33_transcripts to phylodb_1.076.pep.upper...
+  log can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/logs/gmapl.1_780_S33_transcripts.err.log.
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/tmp/1_780_S33_transcripts.psl
+
+GMAP TIME: 0:03:23.155969
+
+
+
+2024-04-03 04:08:47
+Transcripts:
+  /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_780_S33/1_780_S33_transcripts.fasta -> 1_780_S33_transcripts
+Reference:
+  /data/gent/vo/001/gvo00125/vsc44392/viral_tools/phylodb/phylodb_database/phylodb_1.076.pep.fa
+
+
+Processing transcripts from /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_780_S33/1_780_S33_transcripts.fasta:
+
+  2024-04-03 04:08:47
+  Getting GMAP (or BLAT) alignments report files...
+    saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/tmp/1_780_S33_transcripts.assembled.best.psl (contains best alignments for assembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/tmp/1_780_S33_transcripts.uniquely.psl (contains best alignments for uniquely aligned assembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/tmp/1_780_S33_transcripts.paralogs.best.psl (contains best alignments for assembled transcripts having paralogs)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/tmp/1_780_S33_transcripts.misassembled.best.psl (contains best alignments for misassembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/tmp/1_780_S33_transcripts.misassembled.psl (contains all alignments for misassembled transcripts)
+
+  2024-04-03 04:08:48
+  Processing assembled aligned transcripts...
+  Done.
+
+  2024-04-03 04:08:48
+  Processing misassembled aligned transcripts...
+  Done.
+
+  2024-04-03 04:08:48
+  Getting BASIC TRANSCRIPTS metrics...
+  Done.
+  Getting ALIGNMENT metrics...
+  Done.
+  Getting SENSITIVITY metrics...
+
+2024-04-03 04:09:14
+  Running GeneMarkS-T (Gene Prediction in Transcripts)...
+
+ERROR! GeneMarkS-T failed for 1_780_S33_transcripts!
+    logs can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/logs/1_780_S33_transcripts.GeneMarkS_T.out.log and /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/logs/1_780_S33_transcripts.GeneMarkS_T.err.log.
+  Done.
+
+Getting SEPARATED report for 1_780_S33_transcripts...
+
+  2024-04-03 04:09:14
+  Getting TXT report...
+    Getting BASIC TRANSCRIPTS METRICS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/basic_metrics.txt
+    Getting ALIGNMENT METRICS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/alignment_metrics.txt
+    Getting ALIGNMENT METRICS FOR MISASSEMBLED (CHIMERIC) TRANSCRIPTS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/misassemblies.txt
+    Getting ASSEMBLY COMPLETENESS (SENSITIVITY) report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/sensitivity.txt
+    Getting ASSEMBLY SPECIFICITY report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/specificity.txt
+  Done.
+
+  2024-04-03 04:09:14
+  Getting DISTRIBUTION report...
+    Drawing cumulative transcript / isoform length plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/transcript_length.png
+    Drawing cumulative blocks / exons length plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/block_length.png
+    Drawing cumulative transcript aligned fraction plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/x-aligned.png
+    Drawing cumulative number of blocks / exons per alignment / isoform plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/blocks_per_alignment.png
+    Drawing cumulative alignment multiplicity plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/alignment_multiplicity.png
+    Drawing cumulative substitution errors per alignment plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/mismatch_rate.png
+    Drawing Nx plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/Nx.png
+    Drawing NAx plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/NAx.png
+  Done.
+
+  2024-04-03 04:09:17
+  Getting OTHER reports...
+    Getting Unaligned transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/1_780_S33_transcripts.unaligned.fasta
+    Getting Paralogous transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/1_780_S33_transcripts.paralogs.fasta
+    Getting Misassembled transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/1_780_S33_transcripts.misassembled.fasta
+    Getting Misassembled by BLAT transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/1_780_S33_transcripts.misassembled.blat.fasta
+    Getting Misassembled by BLASTN transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/1_780_S33_transcripts.misassembled.blast.fasta
+    Getting Unique aligned transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output/1_780_S33_transcripts.correct.fasta
+  Done.
+
+2024-04-03 04:09:18
+Getting SHORT SUMMARY report...
+  saved to
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/short_report.txt
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/short_report.tex
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/short_report.pdf
+
+THE QUALITY OF TRANSCRIPTOME ASSEMBLY DONE. RESULTS: /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33
+
+Separated assemblies reports are saved to
+  /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/1_780_S33_transcripts_output
+  PDF version (tables and plots) saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/short_report.pdf
+  TXT version (tables and plots) saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/short_report.txt
+
+Log saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_780_S33/logs/rnaQUAST.log
+
+Finished: 2024-04-03 04:09:20
+Elapsed time: 3:57:59.447618
+NOTICEs: 0; WARNINGs: 0; non-fatal ERRORs: 1
+
+non-fatal ERRORs:
+  non-fatal ERROR: GeneMarkS-T failed for 1_780_S33_transcripts!
+
+Thank you for using rnaQUAST!
+
+rnaQUAST: Processed 1_780_S33
+rnaQUAST: Processing 1_ZG02_S35
+/kyukon/data/gent/vo/001/gvo00125/vsc44392/viral_tools/rnaquast/rnaQUAST.py --transcripts /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts.fasta --reference /data/gent/vo/001/gvo00125/vsc44392/viral_tools/phylodb/phylodb_database/phylodb_1.076.pep.fa --output_dir /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35 --threads 45
+
+rnaQUAST: 2.2.4
+
+System information:
+  OS: Linux-4.18.0-477.43.1.el8_8.x86_64-x86_64-with-glibc2.17 (linux_64)
+  Python version: 3.8.19
+  CPUs number: 96
+
+External tools:
+  matplotlib: 3.5.3
+  joblib: 1.3.2
+  gffutils: 0.12
+  blastn: 2.2.31+
+  makeblastdb: 2.2.31+
+  gmap: 2024-03-15
+
+Started: 2024-04-03 04:09:35
+
+Logging to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/logs/rnaQUAST.log
+
+2024-04-03 04:09:35
+Getting reference...
+Done.
+Using non strand specific transcripts...
+
+  2024-04-03 04:10:45
+  Getting transcripts from /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts.fasta...
+  Done.
+
+2024-04-03 04:10:46
+Getting upper case fasta...
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/tmp/phylodb_1.076.pep.upper.fa
+
+2024-04-03 04:11:19
+Creating genome index by gmap_build...
+  logs can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/logs/gmap_build.out.log and /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/logs/gmap_build.err.log
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/tmp/phylodb_1.076.pep.upper
+
+GMAP_BUILD TIME: 3:52:13.663753
+
+
+
+2024-04-03 08:03:32
+Aligning 1_ZG02_S35_transcripts to phylodb_1.076.pep.upper...
+  log can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/logs/gmapl.1_ZG02_S35_transcripts.err.log.
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/tmp/1_ZG02_S35_transcripts.psl
+
+GMAP TIME: 0:03:05.714684
+
+
+
+2024-04-03 08:06:38
+Transcripts:
+  /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts.fasta -> 1_ZG02_S35_transcripts
+Reference:
+  /data/gent/vo/001/gvo00125/vsc44392/viral_tools/phylodb/phylodb_database/phylodb_1.076.pep.fa
+
+
+Processing transcripts from /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts.fasta:
+
+  2024-04-03 08:06:38
+  Getting GMAP (or BLAT) alignments report files...
+    saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/tmp/1_ZG02_S35_transcripts.assembled.best.psl (contains best alignments for assembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/tmp/1_ZG02_S35_transcripts.uniquely.psl (contains best alignments for uniquely aligned assembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/tmp/1_ZG02_S35_transcripts.paralogs.best.psl (contains best alignments for assembled transcripts having paralogs)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/tmp/1_ZG02_S35_transcripts.misassembled.best.psl (contains best alignments for misassembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/tmp/1_ZG02_S35_transcripts.misassembled.psl (contains all alignments for misassembled transcripts)
+
+  2024-04-03 08:06:39
+  Processing assembled aligned transcripts...
+  Done.
+
+  2024-04-03 08:06:39
+  Processing misassembled aligned transcripts...
+  Done.
+
+  2024-04-03 08:06:39
+  Getting BASIC TRANSCRIPTS metrics...
+  Done.
+  Getting ALIGNMENT metrics...
+  Done.
+  Getting SENSITIVITY metrics...
+
+2024-04-03 08:07:06
+  Running GeneMarkS-T (Gene Prediction in Transcripts)...
+
+ERROR! GeneMarkS-T failed for 1_ZG02_S35_transcripts!
+    logs can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/logs/1_ZG02_S35_transcripts.GeneMarkS_T.out.log and /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/logs/1_ZG02_S35_transcripts.GeneMarkS_T.err.log.
+  Done.
+
+Getting SEPARATED report for 1_ZG02_S35_transcripts...
+
+  2024-04-03 08:07:06
+  Getting TXT report...
+    Getting BASIC TRANSCRIPTS METRICS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/basic_metrics.txt
+    Getting ALIGNMENT METRICS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/alignment_metrics.txt
+    Getting ALIGNMENT METRICS FOR MISASSEMBLED (CHIMERIC) TRANSCRIPTS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/misassemblies.txt
+    Getting ASSEMBLY COMPLETENESS (SENSITIVITY) report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/sensitivity.txt
+    Getting ASSEMBLY SPECIFICITY report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/specificity.txt
+  Done.
+
+  2024-04-03 08:07:06
+  Getting DISTRIBUTION report...
+    Drawing cumulative transcript / isoform length plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/transcript_length.png
+    Drawing cumulative blocks / exons length plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/block_length.png
+    Drawing cumulative transcript aligned fraction plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/x-aligned.png
+    Drawing cumulative number of blocks / exons per alignment / isoform plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/blocks_per_alignment.png
+    Drawing cumulative alignment multiplicity plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/alignment_multiplicity.png
+    Drawing cumulative substitution errors per alignment plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/mismatch_rate.png
+    Drawing Nx plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/Nx.png
+    Drawing NAx plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/NAx.png
+  Done.
+
+  2024-04-03 08:07:09
+  Getting OTHER reports...
+    Getting Unaligned transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/1_ZG02_S35_transcripts.unaligned.fasta
+    Getting Paralogous transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/1_ZG02_S35_transcripts.paralogs.fasta
+    Getting Misassembled transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/1_ZG02_S35_transcripts.misassembled.fasta
+    Getting Misassembled by BLAT transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/1_ZG02_S35_transcripts.misassembled.blat.fasta
+    Getting Misassembled by BLASTN transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/1_ZG02_S35_transcripts.misassembled.blast.fasta
+    Getting Unique aligned transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output/1_ZG02_S35_transcripts.correct.fasta
+  Done.
+
+2024-04-03 08:07:10
+Getting SHORT SUMMARY report...
+  saved to
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/short_report.txt
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/short_report.tex
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/short_report.pdf
+
+THE QUALITY OF TRANSCRIPTOME ASSEMBLY DONE. RESULTS: /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35
+
+Separated assemblies reports are saved to
+  /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/1_ZG02_S35_transcripts_output
+  PDF version (tables and plots) saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/short_report.pdf
+  TXT version (tables and plots) saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/short_report.txt
+
+Log saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35/logs/rnaQUAST.log
+
+Finished: 2024-04-03 08:07:12
+Elapsed time: 3:57:37.315449
+NOTICEs: 0; WARNINGs: 0; non-fatal ERRORs: 1
+
+non-fatal ERRORs:
+  non-fatal ERROR: GeneMarkS-T failed for 1_ZG02_S35_transcripts!
+
+Thank you for using rnaQUAST!
+
+rnaQUAST: Processed 1_ZG02_S35
+rnaQUAST: Processing 2_120_S40
+/kyukon/data/gent/vo/001/gvo00125/vsc44392/viral_tools/rnaquast/rnaQUAST.py --transcripts /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/2_120_S40/2_120_S40_transcripts.fasta --reference /data/gent/vo/001/gvo00125/vsc44392/viral_tools/phylodb/phylodb_database/phylodb_1.076.pep.fa --output_dir /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40 --threads 45
+
+rnaQUAST: 2.2.4
+
+System information:
+  OS: Linux-4.18.0-477.43.1.el8_8.x86_64-x86_64-with-glibc2.17 (linux_64)
+  Python version: 3.8.19
+  CPUs number: 96
+
+External tools:
+  matplotlib: 3.5.3
+  joblib: 1.3.2
+  gffutils: 0.12
+  blastn: 2.2.31+
+  makeblastdb: 2.2.31+
+  gmap: 2024-03-15
+
+Started: 2024-04-03 08:07:27
+
+Logging to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/logs/rnaQUAST.log
+
+2024-04-03 08:07:27
+Getting reference...
+Done.
+Using non strand specific transcripts...
+
+  2024-04-03 08:08:37
+  Getting transcripts from /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/2_120_S40/2_120_S40_transcripts.fasta...
+  Done.
+
+2024-04-03 08:08:39
+Getting upper case fasta...
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/tmp/phylodb_1.076.pep.upper.fa
+
+2024-04-03 08:09:12
+Creating genome index by gmap_build...
+  logs can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/logs/gmap_build.out.log and /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/logs/gmap_build.err.log
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/tmp/phylodb_1.076.pep.upper
+
+GMAP_BUILD TIME: 3:51:30.605577
+
+
+
+2024-04-03 12:00:42
+Aligning 2_120_S40_transcripts to phylodb_1.076.pep.upper...
+  log can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/logs/gmapl.2_120_S40_transcripts.err.log.
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/tmp/2_120_S40_transcripts.psl
+
+GMAP TIME: 0:03:26.917299
+
+
+
+2024-04-03 12:04:09
+Transcripts:
+  /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/2_120_S40/2_120_S40_transcripts.fasta -> 2_120_S40_transcripts
+Reference:
+  /data/gent/vo/001/gvo00125/vsc44392/viral_tools/phylodb/phylodb_database/phylodb_1.076.pep.fa
+
+
+Processing transcripts from /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/2_120_S40/2_120_S40_transcripts.fasta:
+
+  2024-04-03 12:04:09
+  Getting GMAP (or BLAT) alignments report files...
+    saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/tmp/2_120_S40_transcripts.assembled.best.psl (contains best alignments for assembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/tmp/2_120_S40_transcripts.uniquely.psl (contains best alignments for uniquely aligned assembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/tmp/2_120_S40_transcripts.paralogs.best.psl (contains best alignments for assembled transcripts having paralogs)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/tmp/2_120_S40_transcripts.misassembled.best.psl (contains best alignments for misassembled transcripts)
+             /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/tmp/2_120_S40_transcripts.misassembled.psl (contains all alignments for misassembled transcripts)
+
+  2024-04-03 12:04:10
+  Processing assembled aligned transcripts...
+  Done.
+
+  2024-04-03 12:04:10
+  Processing misassembled aligned transcripts...
+  Done.
+
+  2024-04-03 12:04:10
+  Getting BASIC TRANSCRIPTS metrics...
+  Done.
+  Getting ALIGNMENT metrics...
+  Done.
+  Getting SENSITIVITY metrics...
+
+2024-04-03 12:04:37
+  Running GeneMarkS-T (Gene Prediction in Transcripts)...
+
+ERROR! GeneMarkS-T failed for 2_120_S40_transcripts!
+    logs can be found in /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/logs/2_120_S40_transcripts.GeneMarkS_T.out.log and /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/logs/2_120_S40_transcripts.GeneMarkS_T.err.log.
+  Done.
+
+Getting SEPARATED report for 2_120_S40_transcripts...
+
+  2024-04-03 12:04:37
+  Getting TXT report...
+    Getting BASIC TRANSCRIPTS METRICS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/basic_metrics.txt
+    Getting ALIGNMENT METRICS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/alignment_metrics.txt
+    Getting ALIGNMENT METRICS FOR MISASSEMBLED (CHIMERIC) TRANSCRIPTS report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/misassemblies.txt
+    Getting ASSEMBLY COMPLETENESS (SENSITIVITY) report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/sensitivity.txt
+    Getting ASSEMBLY SPECIFICITY report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/specificity.txt
+  Done.
+
+  2024-04-03 12:04:37
+  Getting DISTRIBUTION report...
+    Drawing cumulative transcript / isoform length plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/transcript_length.png
+    Drawing cumulative blocks / exons length plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/block_length.png
+    Drawing cumulative transcript aligned fraction plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/x-aligned.png
+    Drawing cumulative number of blocks / exons per alignment / isoform plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/blocks_per_alignment.png
+    Drawing cumulative alignment multiplicity plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/alignment_multiplicity.png
+    Drawing cumulative substitution errors per alignment plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/mismatch_rate.png
+    Drawing Nx plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/Nx.png
+    Drawing NAx plot...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/NAx.png
+  Done.
+
+  2024-04-03 12:04:40
+  Getting OTHER reports...
+    Getting Unaligned transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/2_120_S40_transcripts.unaligned.fasta
+    Getting Paralogous transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/2_120_S40_transcripts.paralogs.fasta
+    Getting Misassembled transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/2_120_S40_transcripts.misassembled.fasta
+    Getting Misassembled by BLAT transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/2_120_S40_transcripts.misassembled.blat.fasta
+    Getting Misassembled by BLASTN transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/2_120_S40_transcripts.misassembled.blast.fasta
+    Getting Unique aligned transcripts report...
+      saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output/2_120_S40_transcripts.correct.fasta
+  Done.
+
+2024-04-03 12:04:42
+Getting SHORT SUMMARY report...
+  saved to
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/short_report.txt
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/short_report.tex
+    /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/short_report.pdf
+
+THE QUALITY OF TRANSCRIPTOME ASSEMBLY DONE. RESULTS: /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40
+
+Separated assemblies reports are saved to
+  /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/2_120_S40_transcripts_output
+  PDF version (tables and plots) saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/short_report.pdf
+  TXT version (tables and plots) saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/short_report.txt
+
+Log saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40/logs/rnaQUAST.log
+
+Finished: 2024-04-03 12:04:44
+Elapsed time: 3:57:17.400723
+NOTICEs: 0; WARNINGs: 0; non-fatal ERRORs: 1
+
+non-fatal ERRORs:
+  non-fatal ERROR: GeneMarkS-T failed for 2_120_S40_transcripts!
+
+Thank you for using rnaQUAST!
+
+rnaQUAST: Processed 2_120_S40
+rnaQUAST: Processing 2_130_S36
+/kyukon/data/gent/vo/001/gvo00125/vsc44392/viral_tools/rnaquast/rnaQUAST.py --transcripts /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/2_130_S36/2_130_S36_transcripts.fasta --reference /data/gent/vo/001/gvo00125/vsc44392/viral_tools/phylodb/phylodb_database/phylodb_1.076.pep.fa --output_dir /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_130_S36 --threads 45
+
+rnaQUAST: 2.2.4
+
+System information:
+  OS: Linux-4.18.0-477.43.1.el8_8.x86_64-x86_64-with-glibc2.17 (linux_64)
+  Python version: 3.8.19
+  CPUs number: 96
+
+External tools:
+  matplotlib: 3.5.3
+  joblib: 1.3.2
+  gffutils: 0.12
+  blastn: 2.2.31+
+  makeblastdb: 2.2.31+
+  gmap: 2024-03-15
+
+Started: 2024-04-03 12:04:59
+
+Logging to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_130_S36/logs/rnaQUAST.log
+
+2024-04-03 12:04:59
+Getting reference...
+Done.
+Using non strand specific transcripts...
+
+  2024-04-03 12:06:08
+  Getting transcripts from /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/individual_assembly/2_130_S36/2_130_S36_transcripts.fasta...
+  Done.
+
+2024-04-03 12:06:10
+Getting upper case fasta...
+  saved to /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_130_S36/tmp/phylodb_1.076.pep.upper.fa
+
+2024-04-03 12:06:43
+Creating genome index by gmap_build...
