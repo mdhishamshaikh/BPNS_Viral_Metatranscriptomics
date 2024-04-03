@@ -5,3 +5,4 @@ mkdir: cannot create directory ‘/data/gent/vo/001/gvo00125/vsc44392/Projects/B
 mkdir: cannot create directory ‘/data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/1_ZG02_S35’: File exists
 mkdir: cannot create directory ‘/data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_120_S40’: File exists
 mkdir: cannot create directory ‘/data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_130_S36’: File exists
+mkdir: cannot create directory ‘/data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/rnaquast_individual_assembly/2_330_S39’: File exists

@@ -1,0 +1,4 @@
+* [Wed Apr  3 16:01:30 2024] Running CMD: /kyukon/data/gent/vo/001/gvo00125/vsc44392/miniconda3/envs/transdecoder/opt/transdecoder/util/compute_base_probs.pl /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/assembly/cross_assembly/final_transcriptome.fasta 0 > /data/gent/vo/001/gvo00125/vsc44392/Projects/BPNS_Viral_Metatranscriptomics/working/taxonomy_annotation/transdecoder/final_transcriptome.fasta.transdecoder_dir/base_freqs.dat
+
+
+-first extracting base frequencies, we'll need them later.
